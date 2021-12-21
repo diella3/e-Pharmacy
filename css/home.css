@@ -1,7 +1,10 @@
+body{
+    margin: 0;
+}
+
 .container{
     display: flex;
-    flex-direction: column;
-  
+    flex-direction: column; 
 }
 p{
     margin: 0;
@@ -17,8 +20,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .logo{
@@ -37,8 +39,6 @@ p{
     font-size: 20px;
     padding: 0 30px 0 30px;
     justify-content: space-between;
-
-
 }
 .section{
 align-items: center;
@@ -48,7 +48,7 @@ justify-content: space-around;
 padding:40px 60px 0 60px ;
 position: relative;
 overflow: hidden;
-height: 750px;
+height: 700px;
 background-image: url("../assets/imgContainer.png");
 background-repeat: no-repeat;
 background-size: 100% 100%;
@@ -69,4 +69,55 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .imgSection img{
     width: 700px;
     height: 500px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    z-index: 99;
+    background-position: left bottom;
+    background-image: url("../assets/aboutUs.png");
+    background-repeat: no-repeat;
+    background-size: 40% 90%;
+    /* padding:60px 0 0 0px; */
+    height: 600px;
+}
+
+/* .about img{
+    padding-right:180px;
+} */
+
+.txtAbout{
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.txtAbout h3 {
+    font-size: 42px;
+    margin: 20px 0 40px 0;
+}
+.txtAbout p{
+    margin: 0px 0 40px 0;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.btn{
+    color:#fff;
+    background-color: #007bff;
+    padding:16px 45px 16px 45px;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all .4s ease-in-out ;
+    border-radius: 5px;
+    background-size: 200% auto;
+}
+.btn:hover{
+    background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
 }
