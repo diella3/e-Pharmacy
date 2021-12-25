@@ -190,6 +190,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .serviceContainer{
     padding-top: 140px;
    justify-items: center;
+   
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -230,7 +231,21 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     line-height: 25px;
 }
-
+.btn1{
+        align-self: center;
+        width: 200px;
+        color:#fff;
+        background-color: #007bff;
+        padding:16px 45px 16px 45px;
+        text-align: center;
+        font-size: 14px;
+        font-family: sans-serif;
+        text-decoration: none;
+        transition: all .4s ease-in-out ;
+        border-radius: 5px;
+        background-size: 200% auto;
+        margin-top: 20px;   
+}
 .clientsContainer{
     margin: 100px 0 100px 0;
     display: flex;
