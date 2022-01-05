@@ -64,7 +64,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("../register/photo_register.jpg");
+    background-image: url("../assets/photo_register.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
