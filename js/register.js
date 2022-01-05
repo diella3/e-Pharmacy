@@ -22,7 +22,7 @@ function validate()
     && email_validation(email) == true
     && gender_validation(genderm,genderf, gendero) == true){
         alert("Your registration was succsessful! You will be redirected to the main page.");
-        window.location = "../aboutus/aboutus.html"
+        window.location = ".home-page/Home.html"
     }
     return false;
 } 
@@ -93,8 +93,9 @@ function lastname_validation(lastname)
     }
 }
 function address_validation(address)
-{ 
-    if(address.length<=50)
+{
+    var letters = /^[0-9a-zA-Z]+$/;
+    if(address.value.match(letters))
     {
         return true;
     }
