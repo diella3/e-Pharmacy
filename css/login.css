@@ -62,7 +62,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../login/photo_login.jpg");
+    background-image: url("../assets/photo_login.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

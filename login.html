@@ -1,8 +1,7 @@
-<html>
+<!DOCTYPE html>
     <head>
         <title>Login Page</title>
         <link rel="stylesheet" href="./css/login.css"/>
-       
     </head>
     <body>
         <header class="header">
@@ -26,7 +25,7 @@
                     <input type="text" name="username" id="username"/><br>
                     <label for="password">Password :</label>
                     <input type="password" name="password" id="password"/><br>
-                    <input type="submit" value="Login" id="submit" onclick="validate()"/>
+                    <input type="submit" value="Login" id="submit" onclick="return validate()"/>
                 </form>
                 <p>Not a member? Consider <a href="../register/register.html">Registering here:</a> </p>
             </div>
@@ -64,6 +63,7 @@
         
             </div>
         </footer> 
-        <script src="login.js"></script>
+        <script src="./js/login.js"></script>
+
     </body>
 </html>
