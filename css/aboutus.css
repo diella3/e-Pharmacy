@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+.header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo{
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.logo img{
+    padding-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+.logo h1{
+    margin: 0;
+    color:  #333333;
+    font-size: 35px;
+}
+.navbar{
+    align-items: center;
+    cursor: pointer;
+    padding: 0px 80px 0 0px;
+    display: flex;
+}
+.navbar  a {
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    font-size: 20px;
+    padding: 0 30px 0 30px;
+    justify-content: space-between;
+}
+#logIn{
+    margin-left: 40px;
+    color:#fff;
+    background-color: #007bff;
+    padding:10px 25px 10px 25px;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all .4s ease-in-out ;
+    border-radius: 50px;
+    background-size: 200% auto; 
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.theBanner{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-image: url("../aboutus/aboutuscontent/photo_2_about_us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.aboutUs{
+    display: flex;  
+    justify-content: center;   
+    font-family: 'Lato', sans-serif;
+    color: rgb(22, 201, 224);
+    letter-spacing: 2px;
+    padding: 5px;
+
+}
+.contentOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: lightskyblue;
+    align-items: center;
+    height: auto;
+}
+.contentTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    align-items: center;
+    padding: 30px;
+}
+.contentThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: lightskyblue;
+    height: auto;
+    align-items: center;
+    padding: 30px;
+
+}
+.contentFour{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    align-items: center;
+    padding: 30px;
+}
+.sectionOneDivOne{
+    display: flex;
+    width: 33%;
+    height: 400px;
+    align-items: center;
+    background-image: url("../aboutus/aboutuscontent/photo_4_about_us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sectionTwoDivOne{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}  
+.sectionOneDivTwo{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+}
+.sectionTwoDivTwo{
+    display: flex;
+    width: 33%;
+    height: 400px;
+    align-items: center;
+    margin-left: 2%;
+    background-image: url("../aboutus/aboutuscontent/photo_5_about_us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.sectionOneDivThree{
+    display: flex;
+    width: 33%;
+    height: 400px;
+    align-items: center;
+    background-image: url("../aboutus/aboutuscontent/photo_6_about_us.jpg");
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.sectionTwoDivThree{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+    
+}
+.sectionOneDivFour{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+.sectionTwoDivFour{
+    display: flex;
+    width: 33%;
+    height: 400px;
+    align-items: center;
+    background-image: url("../aboutus/aboutuscontent/photo_7_about_us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+footer{
+    align-items: flex-start;
+    justify-content: space-around;
+    display: flex;
+    padding: 50px 0 100px 0;
+    background-color: #F1F3F6;
+}
+.first p{
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+}
+.second h4{
+    padding-bottom: 20px;
+    font-size: 26px;
+    margin: 0;
+}
+.second a{
+   
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+    color: inherit;
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+
+.contact img{
+    margin-right: 14px;
+    width: 25px;
+    height: 25px;
+}
+.third h4{
+    padding-bottom: 20px;
+    font-size: 26px;
+    margin: 0;
+}
+.third p{
+    font-size: 18px;
+    line-height: 40px;
+}
