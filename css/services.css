@@ -83,13 +83,13 @@
 
 @keyframes slideri{
     0%{
-        background-image: url(../Projekti/images/hypertension.jpg);
+        background-image: url(../assets/hypertension.jpg);
     }
     55%{
-        background-image: url(../Projekti/images/covid19.png);
+        background-image: url(../assets/covid19.png);
     }
     85%{
-        background-image: url(../Projekti/images/foto\ 4.jpg);
+        background-image: url(../assets/foto\ 4.jpg);
     }
 
 }
