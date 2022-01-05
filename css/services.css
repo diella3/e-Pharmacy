@@ -75,10 +75,9 @@
     height: 400px;
     /* position: relative; */
     /* left:8%; */
-    background-image: url(../Projekti/images/hypertension.jpg);
+    background-image: url(../assets/hypertension.jpg);
     background-size: cover;
     animation: slideri 9s infinite linear;
-    object-fit: cover;
 } 
 
 @keyframes slideri{
