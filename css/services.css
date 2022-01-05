@@ -78,7 +78,6 @@
     background-image: url(../assets/hypertension.jpg);
     background-size: cover;
     animation: slideri 9s infinite linear;
-    object-fit: cover;
 } 
 
 @keyframes slideri{
