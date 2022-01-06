@@ -391,8 +391,8 @@ footer{
 .first img{
     
         padding-right: 15px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     
 }
 #footerLogo{
@@ -402,7 +402,7 @@ footer{
     flex-direction: row;
 }
 #footerLogo h4{
-    padding-bottom: 20px;
+   
     margin: 0;
 }
 .second h4{
