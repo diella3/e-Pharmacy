@@ -22,7 +22,7 @@ function validate()
     && email_validation(email) == true
     && gender_validation(genderm,genderf, gendero) == true){
         alert("Your registration was succsessful! You will be redirected to the main page.");
-        window.location = "../Home.html"
+        window.location = "./Home.html"
     }
     return false;
 } 
@@ -94,14 +94,13 @@ function lastname_validation(lastname)
 }
 function address_validation(address)
 {
-    var letters = /^[0-9a-zA-Z]+$/;
-    if(address.value.match(letters))
+    if(address != null)
     {
         return true;
     }
     else
     {
-        alert("Address is invalid. Please retype it.");
+        alert("Please type your address it.");
         address.focus();
         return false;
     }
