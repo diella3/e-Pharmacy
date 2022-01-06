@@ -22,7 +22,7 @@ function validate()
     && email_validation(email) == true
     && gender_validation(genderm,genderf, gendero) == true){
         alert("Your registration was succsessful! You will be redirected to the main page.");
-        window.location = ".home-page/Home.html"
+        window.location = "../Home.html"
     }
     return false;
 } 
