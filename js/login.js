@@ -7,7 +7,7 @@ function validate(){
         window.location = "./Home.html";
         return false;
     }
-    else if(username == null && password == null){
+    else if(username == "" && password == ""){
         alert ("Enter your username and password");
         return false;
     }
