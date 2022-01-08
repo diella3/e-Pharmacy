@@ -21,7 +21,7 @@ p{
     cursor: pointer;
 }
 .boxHeader{
-    color: #333333;
+    /* color: #333333; */
     font-weight: bold;
     padding: 50px 0px 0px 0px;
 }
@@ -41,7 +41,7 @@ p{
 .box:hover{
     background: #7cb4f0;
     transition: 0.5s ease;
-    color: #fff;
+    color: #fff !important;
 }
 
 .services{
