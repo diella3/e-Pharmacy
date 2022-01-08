@@ -9,6 +9,7 @@ p{
     width: 80%;
     margin: 100px auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
