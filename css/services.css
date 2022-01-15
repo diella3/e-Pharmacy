@@ -20,6 +20,7 @@ p{
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    padding-bottom: 20px;
 }
 .boxHeader{
     /* color: #333333; */
@@ -128,8 +129,7 @@ color: rgb(127, 127,127) !important;
 font-weight: 500;
 margin-bottom: 26px;
 font-size: 14px;
-/*text-transform: capitalize; */
-/*text-align: center !important; */
+
 
 }
 .rreshtifotove {
@@ -138,6 +138,10 @@ font-size: 14px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 70px;
+}
+
+.permbajtja:hover h3{
+    color:red;
 }
 
 .mjekfoto {
