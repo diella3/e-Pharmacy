@@ -108,7 +108,23 @@ p{
 
 }
 
+.farmacistet {
+    margin-bottom: 80px;
+    
+}
+.farmacistet h2 {
+    font-size: 40px;
+    color: #333333;
+    line-height: 37px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 28px;
+    text-align: center !important;
+}
 
+.farmacistet p {
+    
+}
 /*  */
 
 .header{
