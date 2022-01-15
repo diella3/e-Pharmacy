@@ -132,14 +132,13 @@ font-size: 14px;
 /*text-align: center !important; */
 
 }
-
 .rreshtifotove {
     display: flex;
     /*flex-wrap: wrap; */
     /*margin-left: -15px; 
     margin-right: -15px; */
     margin-bottom: 70px;
-    margin-left: 10%;
+     margin: 8%; 
 }
 .permbajtja1 { 
     position: relative;
