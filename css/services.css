@@ -22,6 +22,16 @@ p{
     cursor: pointer;
     padding-bottom: 20px;
 }
+
+
+.box:hover img {
+    display:none;
+}
+
+.box:hover .boxHeader{
+    margin-top: 55px;
+}
+
 .boxHeader{
     /* color: #333333; */
     font-weight: bold;
@@ -74,7 +84,7 @@ p{
 }
 
 .desc{
-    width: 400px;
+    width: 530px;
 }
 .imazhi img{
     margin-top: 20px;
