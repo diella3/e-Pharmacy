@@ -110,7 +110,8 @@ p{
 
 .farmacistet {
     margin-bottom: 80px;
-    
+    font-family: 'Lato', sans-serif;
+    text-align: center !important;
 }
 .farmacistet h2 {
     font-size: 40px;
@@ -119,11 +120,17 @@ p{
     font-weight: 700;
     position: relative;
     margin-bottom: 28px;
-    text-align: center !important;
+   
 }
 
-.farmacistet p {
-    
+.farmacistet pre {
+color: rgb(127, 127,127);
+font-weight: 500;
+margin-bottom: 26px;
+font-size: 14px;
+/*text-transform: capitalize; */
+/*text-align: center !important; */
+
 }
 /*  */
 
