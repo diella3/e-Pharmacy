@@ -133,14 +133,13 @@ font-size: 14px;
 
 }
 .rreshtifotove {
-    display: flex;
-    /*flex-wrap: wrap; */
-    /*margin-left: -15px; 
-    margin-right: -15px; */
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 70px;
-     margin: 8%; 
 }
-.permbajtja1 { 
+/* .permbajtja1 { 
     position: relative;
     width: 100%;
     margin-left: -15px; 
@@ -148,7 +147,7 @@ font-size: 14px;
 }
 .permbajtja2 {
    position: relative; 
-}
+} */
 .mjekfoto {
     position: relative;
     
