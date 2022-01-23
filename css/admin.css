@@ -87,10 +87,17 @@ padding-right: 20px;
     box-sizing: border-box;
     transition: 0.5s;
     margin-top: 10px;
+    cursor: pointer;
+}
+.navBtn a{
+    text-decoration: none;
 }
 
 .sidebarNavButtons .navBtn:hover{
     background: #19B3D3;
+    color: white;
+}
+.sidebarNavButtons .navBtn .link:hover{
     color: white;
 }
 
