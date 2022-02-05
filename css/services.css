@@ -16,11 +16,12 @@ p{
 .box{
     flex: 1;
     border: 1px solid #cfd1d4;
-    height: 300px;
+    /* height: 300px; */
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     padding-bottom: 20px;
+    height: auto;
 }
 
 
@@ -30,6 +31,11 @@ p{
 
 .box:hover .boxHeader{
     margin-top: 55px;
+}
+
+.box h4{
+    margin: 0;
+    padding: 0;
 }
 
 .boxHeader{
@@ -59,18 +65,34 @@ p{
 .services{
     width: 80%;
     margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.services .desc .desContent{
+    margin-bottom: 20px;
 }
 
 .service1{
     display: flex;
     align-items: center;
-    gap: 120px;  /* per mi da elementet e flexit*/
+    gap: 50px;  
+    /* justify-content: space-between; */
     margin-bottom: 60px;
+}
+
+.service1 .desc, .image{
+    flex: 1;
+}
+
+.service2 .desc, .image{
+    flex: 1;
 }
 
 .service2{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;  
+    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 60px;
 }
@@ -86,7 +108,7 @@ p{
 .desc{
     width: 530px;
 }
-.imazhi img{
+.iconImage img{
     margin-top: 20px;
     width: 100px;
     height: 100px;
@@ -119,13 +141,15 @@ p{
 
 }
 
-.farmacistet {
+.farmacists {
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 80px;
     font-family: 'Lato', sans-serif !important;
     text-align: center !important;
 }
 
-.farmacistet h2 {
+.farmacists h2 {
     font-size: 40px;
     color: #333333;
     line-height: 37px; 
@@ -144,7 +168,7 @@ p{
     
 }
 
-.farmacistet p {
+.farmacists p {
 color: rgb(127, 127,127) !important;
 font-weight: 500;
 margin-bottom: 26px;
@@ -152,33 +176,39 @@ font-size: 14px;
 
 
 }
-.rreshtifotove {
+.farmacistsContent {
     display:flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
+    flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 70px;
 }
 
-.permbajtja:hover h3{
+.farmacistsContent .content{
+    flex:1;
+}
+
+.content:hover h3{
     color: #7cb4f0;
 }
 
-.mjekfoto {
+.contentImg {
     position: relative;
 }
-.mjekfoto img{
+.contentImg img{
     width: 300px;
     height: 200px;
 }
-.teksti2 h3{
+.contentText h3{
     margin-bottom: 19px !important;
     font-size: 22px;
     font-weight: 700;
     display: block;
 
 }
-.teksti2 p{
+.contentText p{
     line-height: 14px;
     font-size: 14px;
 }
