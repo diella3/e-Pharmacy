@@ -7,24 +7,23 @@ p{
 }
 * {box-sizing:border-box}
 
-/* Slideshow container */
+
 .slideshow-container {
   width: 85%;
-  /* max-width: 1000px; */
   position: relative;
   margin: 70px auto;
 }
 
-/* Hide the images by default */
+
 .mySlides {
   display: none;
 }
 
 .mySlides img{
   width: 100%;
-  height: 400px; /*check again */
+  height: 400px; 
 }
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -58,8 +57,6 @@ p{
     text-align: center;
     cursor: pointer;
     padding-bottom: 20px;
-    /* height: auto; */
-    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -79,7 +76,7 @@ p{
 }
 
 .boxHeader{
-    /* color: #333333; */
+
     font-weight: bold;
     padding: 50px 0px 0px 0px;
 }
@@ -117,7 +114,7 @@ p{
     display: flex;
     align-items: center;
     gap: 50px;  
-    /* justify-content: space-between; */
+
     margin-bottom: 60px;
 }
 
@@ -132,7 +129,7 @@ p{
 .service2{
     display: flex;
     gap: 50px;  
-    /* justify-content: space-between; */
+  
     align-items: center;
     margin-bottom: 60px;
 }
@@ -152,33 +149,6 @@ p{
     margin-top: 20px;
     width: 100px;
     height: 100px;
-}
-
-.slideri{
-    background-color: black;
-    /* margin-top: 8%; */
-    overflow: hidden;
-    width: 85%;
-    margin: 30px auto;
-    height: 400px;
-    /* position: relative; */
-    /* left:8%; */
-    background-image: url(../assets/hypertension.jpg);
-    background-size: cover;
-    animation: slideri 9s infinite linear;
-} 
-
-@keyframes slideri{
-    0%{
-        background-image: url(../assets/hypertension.jpg);
-    }
-    55%{
-        background-image: url(../assets/covid19.png);
-    }
-    85%{
-        background-image: url(../assets/foto\ 4.jpg);
-    }
-
 }
 
 .farmacists {
@@ -218,7 +188,6 @@ font-size: 14px;
 }
 .farmacistsContent {
     display:flex;
-    /* justify-content: space-between; */
     gap: 20px;
     flex-wrap: wrap;
     width: 80%;
