@@ -5,6 +5,43 @@ body{
 p{
     margin: 0;
 }
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 85%;
+  /* max-width: 1000px; */
+  position: relative;
+  margin: 70px auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  width: 100%;
+  height: 400px; /*check again */
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 .boxes{
     width: 80%;
     margin: 100px auto;
@@ -16,12 +53,15 @@ p{
 .box{
     flex: 1;
     border: 1px solid #cfd1d4;
-    /* height: 300px; */
+    height: 300px;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     padding-bottom: 20px;
-    height: auto;
+    /* height: auto; */
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -217,7 +257,6 @@ font-size: 14px;
 
 .header{
     margin-top: 15px;
-    position: absolute;
     width: 100%;
     z-index: 999;
     display: flex;
