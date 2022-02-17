@@ -28,8 +28,7 @@
         </div>
 
         <div class="sidebarNavButtons">
-
-            <div class="navBtn"><a href="perdorues.html" class="link">Users</a></div>        
+            <div class="navBtn"><a href="user.php" class="link">Users</a></div>        
             <div class="navBtn"><a href="#" class="link">Guests</a></div>             
             <div class="navBtn"><a href="#" class="link">Test</a></div>        
             <div class="navBtn"><a href="#" class="link">Test</a></div>        
