@@ -19,7 +19,7 @@
         } else if($i <= 5){
             array_push($secondThreeServices, $service);
 
-        }else if($i <= 8){
+        }else if($i <= 9){
             array_push($thirdThreeServices, $service);
         }
         $i++;

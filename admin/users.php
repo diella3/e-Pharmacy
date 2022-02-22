@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="./css/user.css">
+        <link rel="stylesheet" type="text/css" href="../css/users.css">
     </head>
 
     <body>
@@ -8,7 +8,7 @@
         <header class="header">
 
             <div class=left-area>
-                <img src="./assets/pharmacyLogo.png" alt="Logo photo is added here">
+                <img src="../assets/pharmacyLogo.png" alt="Logo photo is added here">
                 <h1>e-Pharmacy</h1>
             </div>
         
@@ -20,15 +20,30 @@
     
         <div class="sidebar">
             <div class="image">
-                <img src="./assets/adm.jpg" alt="adminicon is added here">
+                <img src="../assets/adm.jpg" alt="adminicon is added here">
             </div>
     
             <div class="sidebarNavButtons">
-    
-                <div class="navBtn"><a href="admin.html" class="link">Users</a></div>        
-                <div class="navBtn"><a href="vizitor.html" class="link">Guests</a></div>               
-                <div class="navBtn"><a href="#" class="link">Test</a></div>        
-                <div class="navBtn"><a href="#" class="link">Test</a></div>        
+                <a href="users.php" class="link">
+                    <div class="navBtn">
+                        Users
+                    </div>
+                </a>  
+                <a href="admin-services.php" class="link">
+                    <div class="navBtn">
+                        Services
+                    </div>
+                </a> 
+                <a href="./admPharmacists/admin-pharmacists.php" class="link">
+                    <div class="navBtn">
+                        Pharmacists
+                    </div>
+                </a> 
+                <a href="user.php" class="link">
+                    <div class="navBtn">
+                        Test
+                    </div>
+                </a>        
             </div>
     
         </div>

@@ -1,4 +1,3 @@
-
 .header{
     position: fixed;
     background: #22242A;
@@ -107,3 +106,64 @@ padding-right: 20px;
 .sidebarNavButtons .navBtn .link:hover{
     color: white;
 }
+
+
+.add-service-section{
+    position: absolute;
+    margin-top: 205px;
+    margin-left: 400px;
+}
+
+.title-input{
+    width: 1400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.content-input{
+    width: 1400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.image-section{
+    margin: 20px 0;
+}
+
+
+.submit-btn{
+    padding: 13px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background: #dee3e0;
+    transition: 0.25s ease-in-out;
+}
+
+
+
+
+
+
+

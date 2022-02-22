@@ -1,6 +1,6 @@
 .header{
     position: fixed;
-    background: teal;
+    background: #22242A;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -14,7 +14,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 0 30px;
 }
 
 .left-area img {
@@ -24,11 +24,11 @@
 }
 
 .left-area h1{
-    color:  #333333;
+    color:  #fff;
     padding-right: 15px;
     /*width: 50px; */
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 body{
@@ -55,8 +55,8 @@ padding-right: 20px;
 
 
 .sidebar{
-    background: teal;
-    margin-top: 70px;
+    background: #2F323A;
+    margin-top: 74px;
     padding-top: 30px;
     position: fixed;
     left: 0;
@@ -77,18 +77,18 @@ padding-right: 20px;
 }
 
 .sidebarNavButtons .navBtn{
-    color:black;
+    color:#fff;
     display: block;
     width: 100%;
     line-height: 60px;
     text-decoration: none;
-    padding-left: 40px;
     box-sizing: border-box;
     transition: 0.5s;
     margin-top: 10px;
     cursor: pointer;
+    text-align: center;
 }
-.navBtn a{
+.sidebarNavButtons a{
     color: black;
     text-decoration: none;
 }
@@ -107,22 +107,63 @@ padding-right: 20px;
     color: white;
 }
 
-table{
-    border-collapse: collapse;
+
+.add-pharmacist-section{
     position: absolute;
-    width: 1100px;
-    color: teal;
-    font-size: 25px;
-    text-align: left;
-    margin-left: 350px;
-    margin-top: 150px;
+    margin-top: 205px;
+    margin-left: 400px;
 }
-th{
-    background-color: teal;
-    color: white;
-    padding: 0 10px;
+
+.title-input{
+    width: 1400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
 }
-td{
-    padding: 5px 10px;
-    border-bottom: 1px solid gray;
+
+.content-input{
+    width: 1400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
 }
+
+.image-section{
+    margin: 20px 0;
+}
+
+
+.submit-btn{
+    padding: 13px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background: #dee3e0;
+    transition: 0.25s ease-in-out;
+}
+
+
+
+
+
+
+
