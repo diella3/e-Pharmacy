@@ -24,12 +24,18 @@
             </div>
     
             <div class="sidebarNavButtons">
+                <a href="dashboard.php" class="link">
+                    <div class="navBtn">
+                        Dashboard
+                    </div>
+                </a>
+
                 <a href="users.php" class="link">
                     <div class="navBtn">
                         Users
                     </div>
                 </a>  
-                <a href="admin-services.php" class="link">
+                <a href="./admServices/admin-services.php" class="link">
                     <div class="navBtn">
                         Services
                     </div>
