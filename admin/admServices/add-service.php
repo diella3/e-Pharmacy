@@ -1,5 +1,5 @@
 <?php
-    require '../controllers/AdmServiceController.php';
+    require '../../controllers/AdmServiceController.php';
     $service = new AdmServiceController;
 
     if(isset($_POST['add'])) {
@@ -16,7 +16,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/add-service.css">
+        <link rel="stylesheet" type="text/css" href="../../css/admin.css">
     </head>
 
     <body>
@@ -24,7 +24,7 @@
         <header class="header">
 
             <div class=left-area>
-                <img src="../assets/pharmacyLogo.png" alt="Logo photo is added here">
+                <img src="../../assets/pharmacyLogo.png" alt="Logo photo is added here">
                 <h1>e-Pharmacy</h1>
             </div>
         
@@ -36,11 +36,16 @@
     
         <div class="sidebar">
             <div class="image">
-                <img src="../assets/adm.jpg" alt="adminicon is added here">
+                <img src="../../assets/adm.jpg" alt="adminicon is added here">
             </div>
 
-            <div class="sidebarNavButtons">              
-            <a href="users.php" class="link">
+            <div class="sidebarNavButtons">  
+                <a href="../dashboard.php" class="link">
+                    <div class="navBtn">
+                        Dashboard
+                    </div>
+                </a>            
+                <a href="../users.php" class="link">
                     <div class="navBtn">
                         Users
                     </div>
@@ -50,9 +55,9 @@
                         Services
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="../admPharmacists/admin-pharmacists.php" class="link">
                     <div class="navBtn">
-                        Test
+                        Pharmacists
                     </div>
                 </a> 
                 <a href="user.php" class="link">

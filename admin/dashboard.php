@@ -1,3 +1,13 @@
+<?php 
+    require '../controllers/DashboardController.php';
+
+    $dshb = new DashboardController;
+
+    $pharmacistsCount = $dshb->getPharmacistCount();
+    $servicesCount = $dshb->getServicesCount();
+?>
+
+
 <html>
     <head>   
         <title>Administrator dashboard</title>
@@ -52,8 +62,26 @@
             </div>
         </div>
 
-        <div>
-            test
+        <div class="content-wrapper">
+            <div class="boxes">
+                <div class="firstBox box">
+                    Users registered
+                </div>
+
+                <div class="secondBox box">                  
+                    Total Pharmacists: <?php echo $pharmacistsCount; ?>                      
+                </div>
+            </div>  
+            
+            <div class="boxes">
+                <div class="thirdBox box">
+                    Total Services: <?php echo $servicesCount; ?> 
+                </div>
+
+                <div class="fourthBox box">
+                    Test
+                </div>
+            </div>
         </div>
     </body>
 </html>

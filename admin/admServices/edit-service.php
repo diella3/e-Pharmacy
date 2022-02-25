@@ -1,5 +1,5 @@
 <?php
-    require '../controllers/AdmServiceController.php';
+    require '../../controllers/AdmServiceController.php';
     $service = new AdmServiceController;
 
     if(isset($_GET['id'])) {
@@ -24,7 +24,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/edit-service.css">
+        <link rel="stylesheet" type="text/css" href="../../css/admin.css">
     </head>
 
     <body>
@@ -32,7 +32,7 @@
         <header class="header">
 
             <div class=left-area>
-                <img src="../assets/pharmacyLogo.png" alt="Logo photo is added here">
+                <img src="../../assets/pharmacyLogo.png" alt="Logo photo is added here">
                 <h1>e-Pharmacy</h1>
             </div>
         
@@ -44,11 +44,16 @@
     
         <div class="sidebar">
             <div class="image">
-                <img src="../assets/adm.jpg" alt="adminicon is added here">
+                <img src="../../assets/adm.jpg" alt="adminicon is added here">
             </div>
 
-            <div class="sidebarNavButtons">              
-                <a href="users.php" class="link">
+            <div class="sidebarNavButtons"> 
+                <a href="../dashboard.php" class="link">
+                    <div class="navBtn">
+                        Dashboard
+                    </div>
+                </a>             
+                <a href="../users.php" class="link">
                     <div class="navBtn">
                         Users
                     </div>
@@ -58,9 +63,9 @@
                         Services
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="../admPharmacists/admin-pharmacists.php" class="link">
                     <div class="navBtn">
-                        Test
+                        Pharmacists
                     </div>
                 </a> 
                 <a href="user.php" class="link">
@@ -78,7 +83,7 @@
 
                 <div class="image-section">
                     <div class="currentPhotoSection">
-                        <img src="../assets/<?php echo $currentService['image'];?>" alt="" width="350" height="250">
+                        <img src="../../assets/<?php echo $currentService['image'];?>" alt="" width="350" height="250">
                     </div>
                     <input class="form-control" type="file" name="file">
                 </div>              
@@ -93,10 +98,8 @@
                     <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Edit</button>
                 </div>
              
-                <div class="flex1">
-                    <a href="singlePerdorues.php?id=<?php echo $user['id'];?>">
-                        <button class="submit-btn delete" type="submit" form="delete-form" name="delete">Delete</button>
-                    </a>
+                <div class="flex1">                
+                    <button class="submit-btn delete" type="submit" form="delete-form" name="delete">Delete</button>
                 </div>              
             </div>
             

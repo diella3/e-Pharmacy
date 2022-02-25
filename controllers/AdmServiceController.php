@@ -1,6 +1,6 @@
 <?php
 
-include '../config/Database.php';
+include '../../config/Database.php';
 
 class AdmServiceController
 {
@@ -37,7 +37,7 @@ class AdmServiceController
 
         $query->execute();
 
-        return header('Location: ../admin/admin-services.php');
+        return header('Location: ../admServices/admin-services.php');
     }
 
     public function editService($id, $request, $image)
@@ -60,7 +60,7 @@ class AdmServiceController
                 'id' => $id
             ]);
         }
-        return header('Location: ../admin/admin-services.php');
+        return header('Location: ../admServices/admin-services.php');
     }
 
     public function deleteService($id)
@@ -68,6 +68,6 @@ class AdmServiceController
         $query = $this->db->pdo->prepare('DELETE FROM services WHERE id = :id');
         $query->execute(['id' => $id]);
 
-        return header('Location: ../admin/admin-services.php');
+        return header('Location: ../admServices/admin-services.php');
     }
 }

@@ -6,7 +6,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../../css/admin-pharmacists.css">
+        <link rel="stylesheet" type="text/css" href="../../css/admin.css">
     </head>
 
     <body>
@@ -29,18 +29,23 @@
                 <img src="../../assets/adm.jpg" alt="adminicon is added here">
             </div>
 
-            <div class="sidebarNavButtons">              
+            <div class="sidebarNavButtons">    
+                <a href="../dashboard.php" class="link">
+                    <div class="navBtn">
+                        Dashboard
+                    </div>
+                </a>          
                 <a href="../users.php" class="link">
                     <div class="navBtn">
                         Users
                     </div>
                 </a>  
-                <a href="../admin-services.php" class="link">
+                <a href="../admServices/admin-services.php" class="link">
                     <div class="navBtn">
                         Services
                     </div>
                 </a> 
-                <a href="admin-pharmacists.php" class="link">
+                <a href="./admin-pharmacists.php" class="link">
                     <div class="navBtn">
                         Pharmacists
                     </div>
@@ -72,7 +77,7 @@
 
             <div class="services-list-content">
                 <?php foreach($pharmacists as $pharmacist):?>
-                    <a class="redirection-link" href="edit-service.php?id=<?php echo $service['id'];?>">
+                    <a class="redirection-link" href="edit-pharmacist.php?id=<?php echo $pharmacist['id'];?>">
                         <div class="pharmacist-box">
                             <div class="pharmacist-title flex1">
                                 <?php echo $pharmacist['full_name'];?>

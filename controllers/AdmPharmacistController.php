@@ -15,9 +15,9 @@ class AdmPharmacistController
         return $query->fetchAll();
     }
 
-    public function getServiceById($id)
+    public function getPharmacistById($id)
     {
-        $query = $this->db->pdo->prepare('SELECT * FROM services WHERE id = :id');
+        $query = $this->db->pdo->prepare('SELECT * FROM pharmacists WHERE id = :id');
         $query->execute(['id' => $id]);
         return $query->fetch();
     }
@@ -37,37 +37,43 @@ class AdmPharmacistController
 
         $query->execute();
 
-        return header('Location: ../admin/admin-pharmacists.php');
+        return header('Location: ./admin-pharmacists.php');
     }
 
-    public function editService($id, $request, $image)
+    public function editPharmacist($id, $request, $image)
     {
         if(empty($image)){
-            $query = $this->db->pdo->prepare('UPDATE services SET title = :title, content = :content WHERE id = :id');
+            $query = $this->db->pdo->prepare('UPDATE pharmacists SET full_name = :full_name, description = :description WHERE id = :id');
         
             $query->execute([
-                'title' => $request['title'],
-                'content' => $request['content'],          
+                'full_name' => $request['full_name'],
+                'description' => $request['description'],          
                 'id' => $id
             ]);
         }else{
-            $query = $this->db->pdo->prepare('UPDATE services SET title = :title, content = :content, image = :image WHERE id = :id');
+            $query = $this->db->pdo->prepare('UPDATE pharmacists SET full_name = :full_name, description = :description, image = :image WHERE id = :id');
         
             $query->execute([
-                'title' => $request['title'],
-                'content' => $request['content'],          
+                'full_name' => $request['full_name'],
+                'description' => $request['description'],          
                 'image' => $image,          
                 'id' => $id
             ]);
         }
-        return header('Location: ../admin/admin-services.php');
+        return header('Location: ./admin-pharmacists.php');
     }
 
-    public function deleteService($id)
+    public function deletePharmacist($id)
     {
-        $query = $this->db->pdo->prepare('DELETE FROM services WHERE id = :id');
+        $query = $this->db->pdo->prepare('DELETE FROM pharmacists WHERE id = :id');
         $query->execute(['id' => $id]);
 
-        return header('Location: ../admin/admin-services.php');
+        return header('Location: ./admin-pharmacists.php');
+    }
+
+    public function getPharmacistCount()
+    {
+        $query = $this->db->pdo->prepare('SELECT COUNT(*) FROM users');
+        $query->fetchColumn();
     }
 }
