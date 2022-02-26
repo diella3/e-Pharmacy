@@ -1,8 +1,41 @@
-<html>
+<?php 
+    require './controllers/ServicePharmacistController.php';
 
+    $service_pharmacist = new ServicePharmacistController;
+
+    $services = $service_pharmacist->getServices();
+    // $pharmacists = $service_pharmacist->getPharmacists();
+    $static_content = $service_pharmacist->getStaticContent();
+
+    $firstTwoServices = array();
+    $secondTwoServices = array();
+  
+
+    $i = 0;
+    foreach( $services as $service) {
+        if($i <=1) {
+            array_push($firstTwoServices, $service);
+
+        } 
+        else if($i <= 3){
+            array_push($secondTwoServices, $service);
+
+        }
+        // else if($i <= 9){
+        //     array_push($thirdThreeServices, $service);
+        // }
+        $i++;
+    }
+?>
+
+
+<html>
 <head>
     <title>Home</title>
-    <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <style>
+        <?php include "css/home.css" ?>
+        </style>
 </head>
 
 <body>
@@ -15,7 +48,7 @@
             </div>
             <div class="navbar">
                 <a>Home</a>
-                <a href="aboutus.html">About Us</a>
+                <a href="aboutus.php">About Us</a>
                 <a href="services.php">Services</a>
                 <a id="logIn" href="login.html">LogIn</a>
                 <a id="register" href="register.html">Register</a>
@@ -95,19 +128,23 @@
         <div class="serviceContainer">
             <h3>Services</h3>
             <div class="services">
+      
                 <div class="service">
+                <?php foreach($firstTwoServices as $service):?>
                     <div class="one">
                         <div class="icon">
                             <img src="./assets/servicesIcon.png">
-                            <p>Disposal and review of medicals</p>
+                            <p>
+                                <?php echo $service['title'];?>
+                            </p>
                         </div>
                         <div class="text">
-                            <p>Besides selling the medicines, our pharmacy<br>
-                                provides the service of disposal of medicals.<br>
-                                 </p>
+                            <p>
+                                <?php echo $service['content'];?><br>
+                            </p>
                         </div>
                     </div>
-                    <div class="one">
+                    <!-- <div class="one">
                         <div class="icon">
                             <img src="./assets/servicesIcon.png">
                             <p>
@@ -117,24 +154,28 @@
                             <p>Contact us at any time to take <br>
                                 the necessary measures at the right time.</p>
                         </div>
-                    </div>
+                    </div> -->
+                    <?php endforeach ;?>
                 </div>
-                <div>
+               <div>
                     <img src="./assets/services.png">
                 </div>
                 <div class="service">
+                <?php foreach($secondTwoServices as $service):?>
                     <div class="one">
                         <div class="icon">
                             <img src="./assets/servicesIcon.png">
                             <p>
-                                Health education</p>
+                                <?php echo $service['title'];?>
+                            </p>
                         </div>
                         <div class="text">
-                            <p> Health education teaches about physical,  <br>
-                                mental, emotional and social health.</p>
+                            <p>
+                                <?php echo $service['content'];?><br>
+                            </p>
                         </div>
                     </div>
-                    <div class="one">
+                    <!-- <div class="one">
                         <div class="icon">
                             <img src="./assets/servicesIcon.png">
                             <p>
@@ -144,10 +185,12 @@
                             <p>We may provide you  the  perfect place <br>
                                 for consulting and instructions. </p>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                    <?php endforeach ;?>
+                </div> 
               
             </div>
+          
             <a class="btn1" href="services.html">LEARN MORE</a>
         </div>
         <!-- Our services-->

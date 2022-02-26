@@ -35,7 +35,8 @@ p{
 }
 .logo h1{
     margin: 0;
-    color:  #333333;
+
+    /* color:  #333333; */
     font-size: 30px;
 }
 .navbar{
@@ -89,7 +90,7 @@ display: flex;
 width: 100%;
 flex-direction: row;
 justify-content: space-around;
-padding:40px 0px 0 0px ;
+padding:130px 0px 0 0px ;
 position: relative;
 overflow: hidden;
 height: 700px;
@@ -193,6 +194,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-right: 12px;
 }
 .serviceContainer{
+ 
     padding-top: 140px;
    justify-items: center;
    
@@ -206,18 +208,20 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 42px;
 }
 .services{
-
+ 
     padding: 100px 0 80px 0;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     display: flex;
     flex-direction: row;
 }
 
 .service{
+  
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .icon{
     font-size: 22px;
     display: flex;
@@ -229,6 +233,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 20px;
 }
 .text p{
+
     font-size: 18px;
     line-height: 25px;
 }
