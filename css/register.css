@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+
 }
 p{
     margin: 0;
@@ -76,30 +77,38 @@ p{
     border-radius: 50px;
     background-size: 200% auto;
 }
-.mainDiv{
+.registerform{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/photo_login.jpg");
+    flex-direction: column;
+    background-image: url("../assets/photo_register.jpg");
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
-    height: 700px;
-
+    background-size: auto;
+    font-family: 'lato', sans-serif;
+    height:auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.form{
+.user_data{
     display: flex;
     flex-direction: column;
-    font-family: 'lato', sans-serif;
     background-color: lightyellow;
+    font-family: 'lato', sans-serif;
     padding: 40px;
     border-radius: 5px;
 }
-.loginForm{
-    display: flex;
-    flex-direction: column;
+.genderRow{
+    display: inline-block;
 }
-.form input[type=submit]{
+.user_data h1{
+    align-self: center;
+}
+.user_data p{
+    align-self: center;
+}
+.submitColumn{
     display: flex;
     justify-content: center;
     background-color: orange; 
@@ -111,21 +120,22 @@ p{
     align-items: center;
     margin-top: 20px;
     cursor: pointer;
-}
-.loginForm input[type=text]{
-    border-style: solid;
-    border-color: #000000;
-    border-width: 1px;
-    border-radius: 6px;
-    height: 30px;
     
 }
-.loginForm input[type=password]{
+.user_data input[type=text]{
     border-style: solid;
     border-color: #000000;
     border-width: 1px;
     border-radius: 6px;
-    height: 30px;
+    height: 25px;
+    
+}
+.user_data input[type=password]{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 6px;
+    height: 25px;
     
 }
 footer{
