@@ -24,4 +24,8 @@ class ServicePharmacistController
         $query = $this->db->pdo->query('SELECT * FROM services_static_content');
         return $query->fetchAll();
     }
+    public function getClients(){
+        $query = $this->db->pdo->query('SELECT * FROM clients');
+        return $query->fetchAll();
+    }
 }

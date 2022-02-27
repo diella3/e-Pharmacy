@@ -17,7 +17,7 @@
             array_push($firstTwoServices, $service);
 
         } 
-        else if($i <= 3){
+        else if($i <= 2){
             array_push($secondTwoServices, $service);
 
         }
@@ -144,20 +144,10 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="one">
-                        <div class="icon">
-                            <img src="./assets/servicesIcon.png">
-                            <p>
-                                Covid - 19 Instructions </p>
-                        </div>
-                        <div class="text">
-                            <p>Contact us at any time to take <br>
-                                the necessary measures at the right time.</p>
-                        </div>
-                    </div> -->
+            
                     <?php endforeach ;?>
                 </div>
-               <div>
+               <div id="mainImg">
                     <img src="./assets/services.png">
                 </div>
                 <div class="service">
@@ -175,17 +165,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="one">
-                        <div class="icon">
-                            <img src="./assets/servicesIcon.png">
-                            <p>
-                                Consultations and instructions </p>
-                        </div>
-                        <div class="text">
-                            <p>We may provide you  the  perfect place <br>
-                                for consulting and instructions. </p>
-                        </div>
-                    </div> -->
                     <?php endforeach ;?>
                 </div> 
               

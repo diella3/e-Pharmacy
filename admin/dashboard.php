@@ -5,6 +5,7 @@
 
     $pharmacistsCount = $dshb->getPharmacistCount();
     $servicesCount = $dshb->getServicesCount();
+    $clientsCount = $dshb->getClientsCount();
 ?>
 
 
@@ -54,9 +55,9 @@
                         Pharmacists
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="./admClients/admin-clients.php" class="link">
                     <div class="navBtn">
-                        Test
+                       Clients
                     </div>
                 </a>          
             </div>
@@ -79,7 +80,7 @@
                 </div>
 
                 <div class="fourthBox box">
-                    Test
+                Total Clients: <?php echo $clientsCount; ?> 
                 </div>
             </div>
         </div>

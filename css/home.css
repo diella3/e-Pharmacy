@@ -36,7 +36,7 @@ p{
 .logo h1{
     margin: 0;
 
-    /* color:  #333333; */
+    color:  #333333;
     font-size: 30px;
 }
 .navbar{
@@ -197,9 +197,10 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  
     padding-top: 140px;
    justify-items: center;
-   
+ 
     display: flex;
     flex-direction: column;
+
 
 }
 .serviceContainer h3{
@@ -210,13 +211,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .services{
  
     padding: 100px 0 80px 0;
-    /* justify-content: space-evenly; */
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
 }
 
 .service{
-  
+    width: 28%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -237,6 +238,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     line-height: 25px;
 }
+
 .btn1{
         align-self: center;
         width: 200px;

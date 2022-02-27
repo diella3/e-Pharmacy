@@ -44,9 +44,9 @@
                         Pharmacists
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="./admClients/admin-clients.php" class="link">
                     <div class="navBtn">
-                        Test
+                        Clients
                     </div>
                 </a>          
             </div>
