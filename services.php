@@ -112,12 +112,12 @@
                         </div>
             
                         <div class="desc">
-                            <div class="descContent">
+                            <div>
                                 <h4 class="headerSpan">
                                     <?php echo $service['title'];?>
                                 </h4>
                             </div>
-                            <div>
+                            <div class="descContent">
                                 <p>
                                     <?php echo $service['content'];?> 
                                 </p>
@@ -126,13 +126,13 @@
 
                     <?php else: ?>     
                         <div class="desc">
-                            <div class="descContent">
+                            <div>
                                 <h4 class="headerSpan">
                                     <?php echo $service['title'];?>
                                 </h4>
                             </div>
                             <div>
-                                <p>
+                                <p class="descContent">
                                     <?php echo $service['content'];?> 
                                 </p>
                             </div>

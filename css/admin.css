@@ -554,3 +554,105 @@ td{
     padding: 5px 10px;
     border-bottom: 1px solid gray;
 }
+
+/* responsitivity */
+
+@media only screen and (max-width: 1580px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 1200px;
+    }
+
+    .pharmacist-box{
+        max-width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 1000px;
+    }
+
+    .pharmacist-box{
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 850px;
+    }
+
+    .pharmacist-box{
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 650px;
+    }
+
+    .pharmacist-box{
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 550px;
+    }
+
+    .pharmacist-box{
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1580px) {
+    .services-list-label-and-add-btn{
+        max-width: 1200px;
+    }
+
+    .service-box{
+        max-width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .services-list-label-and-add-btn{
+        max-width: 1000px;
+    }
+
+    .service-box{
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .services-list-label-and-add-btn{
+        max-width: 850px;
+    }
+
+    .service-box{
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .services-list-label-and-add-btn{
+        max-width: 650px;
+    }
+
+    .service-box{
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .services-list-label-and-add-btn{
+        max-width: 550px;
+    }
+
+    .service-box{
+        max-width: 450px;
+    }
+}
