@@ -77,14 +77,14 @@
 
             <div class="services-list-content">
                 <?php foreach($clients as $client):?>
-                    <a class="redirection-link" href="edit-clients.php?id=<?php echo $clients['id'];?>">
+                    <a class="redirection-link" href="edit-clients.php?id=<?php echo $client['id'];?>">
                         <div class="pharmacist-box">
                             <div class="pharmacist-title flex1">
-                                <?php echo $clients['clientName'];?>
+                                <?php echo $client['clientName'];?>
                             </div>
 
                             <div class="pharmacist-description flex1">
-                                <?php echo $clients['content'];?>
+                                <?php echo $client['content'];?>
                             </div>
                         </div>
                     </a>                 

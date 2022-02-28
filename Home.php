@@ -196,6 +196,7 @@
                 <div class="comentsSection">
                     <P id="title">What People Say About Us</P>
                     <div class="cards">
+                        
                         <div class="card">
                             <h4>Happy Clients</h4>
                             <p>As a mom, i don't have much time and the<br>
