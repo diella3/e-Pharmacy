@@ -206,7 +206,7 @@ font-size: 14px;
     position: relative;
 }
 .contentImg img{
-    width: 300px;
+    width: 100%;
     height: 200px;
 }
 .contentText h3{

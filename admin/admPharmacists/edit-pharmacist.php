@@ -25,6 +25,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+        <link rel="icon" type="image/x-icon" href="../../assets/pharmacyLogo.png"> 
     </head>
 
     <body>
@@ -63,7 +64,7 @@
                         Services
                     </div>
                 </a> 
-                <a href="./admPharmacists/admin-pharmacists.php" class="link">
+                <a href="./admin-pharmacists.php" class="link">
                     <div class="navBtn">
                         Pharmacists
                     </div>
@@ -95,7 +96,7 @@
             
             <div class="edit-delete-btns">
                 <div class="flex1">
-                    <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Edit</button>
+                    <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Save</button>
                 </div>
              
                 <div class="flex1">
