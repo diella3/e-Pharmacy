@@ -556,7 +556,7 @@ td{
     border-bottom: 1px solid gray;
 }
 
-/* responsitivity */
+/* responsivity */
 
 @media only screen and (max-width: 1580px) {
     .pharmacists-list-label-and-add-btn{
