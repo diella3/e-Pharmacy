@@ -71,8 +71,8 @@
 
         <div class="add-service-section">
             <form id="add-form" action="" method="POST" enctype="multipart/form-data">
-                <input class="title-input-as" type="text" value="" name="title" placeholder="Title"><br>
-                <input class="content-input-as" type="text" value="" name="content" placeholder="Content"><br>  
+                <input class="title-input" type="text" value="" name="title" placeholder="Title"><br>
+                <input class="content-input" type="text" value="" name="content" placeholder="Content"><br>  
 
                 <div class="image-section">
                     <input class="form-control" type="file" name="file">

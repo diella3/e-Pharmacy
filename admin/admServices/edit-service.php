@@ -79,8 +79,8 @@
 
         <div class="edit-service-section">
             <form id="edit-form" action="" method="POST" enctype="multipart/form-data">
-                <input class="title-input-es" type="text" value="<?php echo $currentService['title']; ?>" name="title"><br>
-                <input class="content-input-es" type="text" value="<?php echo $currentService['content']; ?>" name="content"><br>     
+                <input class="title-input" type="text" value="<?php echo $currentService['title']; ?>" name="title"><br>
+                <input class="content-input" type="text" value="<?php echo $currentService['content']; ?>" name="content"><br>     
 
                 <div class="image-section">
                     <div class="currentPhotoSection">

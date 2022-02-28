@@ -79,8 +79,8 @@
 
         <div class="edit-service-section">
             <form id="edit-form" action="" method="POST" enctype="multipart/form-data">
-                <input class="title-input-ep" type="text" value="<?php echo $currentPharmacist['full_name']; ?>" name="full_name"><br>
-                <input class="content-input-ep" type="text" value="<?php echo $currentPharmacist['description']; ?>" name="description"><br>     
+                <input class="title-input" type="text" value="<?php echo $currentPharmacist['full_name']; ?>" name="full_name"><br>
+                <input class="content-input" type="text" value="<?php echo $currentPharmacist['description']; ?>" name="description"><br>     
 
                 <div class="image-section">
                     <div class="currentPhotoSection">
