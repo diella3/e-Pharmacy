@@ -185,7 +185,7 @@ padding-right: 20px;
 }
 
 .title-input{
-    width: 1400px;
+    /* width: 1400px;  */
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -239,8 +239,8 @@ padding-right: 20px;
     margin-left: 300px;
 }
 
-.title-input{
-    width: 1400px;
+.title-input-ep{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -250,8 +250,8 @@ padding-right: 20px;
     outline: none;
 }
 
-.content-input{
-    width: 1400px;
+.content-input-ep{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -427,8 +427,8 @@ padding-right: 20px;
     margin-left: 300px;
 }
 
-.title-input{
-    width: 1400px;
+.title-input-es{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -438,8 +438,8 @@ padding-right: 20px;
     outline: none;
 }
 
-.content-input{
-    width: 1400px;
+.content-input-es{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -447,6 +447,7 @@ padding-right: 20px;
     border-radius: 4px;
     box-sizing: border-box;
     outline: none;
+ 
 }
 
 .edit-delete-btns{
@@ -565,6 +566,7 @@ td{
     .pharmacist-box{
         max-width: 1100px;
     }
+
 }
 
 @media only screen and (max-width: 1480px) {
@@ -647,12 +649,64 @@ td{
     }
 }
 
-@media only screen and (max-width: 950px) {
-    .services-list-label-and-add-btn{
-        max-width: 550px;
+@media only screen and (max-width: 1400px) {
+    .title-input-es, .title-input-ep{
+        width: 850px;
     }
-
-    .service-box{
-        max-width: 450px;
+    
+    .content-input-es, .content-input-ep{
+        width: 850px;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .title-input-es, .title-input-ep{
+        width: 750px;
+    }
+    
+    .content-input-es, .content-input-ep{
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .title-input-es, .title-input-ep{
+        width: 550px;
+    }
+    
+    .content-input-es, .content-input-ep{
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title-input-es, .title-input-ep{
+        width: 450px;
+    }
+    
+    .content-input-es, .content-input-ep{
+        width: 450px;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .title-input-es{
+        width: 350px;
+    }
+    
+    .content-input-es{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title-input-es{
+        width: 150px;
+    }
+    
+    .content-input-es{
+        width: 150px;
+    }
+} */
+
+
