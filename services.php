@@ -67,12 +67,10 @@
               <img src="./assets/photo 3.jpg">
             </div>
           </div>
-          <br>
 
         <div class="servicestitle">
-            <br>
 
-        <h2 class="know"> e-Pharmacy services</h2>
+            <h2 class="know"> e-Pharmacy services</h2>
 
         </div>
 
@@ -131,8 +129,8 @@
                                     <?php echo $service['title'];?>
                                 </h4>
                             </div>
-                            <div>
-                                <p class="descContent">
+                            <div class="descContent">
+                                <p>
                                     <?php echo $service['content'];?> 
                                 </p>
                             </div>
