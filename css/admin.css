@@ -185,7 +185,7 @@ padding-right: 20px;
 }
 
 .title-input{
-    width: 1400px;
+    width: 1100px; 
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -196,7 +196,7 @@ padding-right: 20px;
 }
 
 .content-input{
-    width: 1400px;
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -239,8 +239,8 @@ padding-right: 20px;
     margin-left: 300px;
 }
 
-.title-input{
-    width: 1400px;
+/* .title-input-ep{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -250,8 +250,8 @@ padding-right: 20px;
     outline: none;
 }
 
-.content-input{
-    width: 1400px;
+.content-input-ep{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -259,7 +259,7 @@ padding-right: 20px;
     border-radius: 4px;
     box-sizing: border-box;
     outline: none;
-}
+} */
 
 .edit-delete-btns{
     display: flex;
@@ -371,8 +371,8 @@ padding-right: 20px;
     margin-left: 400px;
 }
 
-.title-input{
-    width: 1400px;
+/* .title-input-as{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -382,8 +382,8 @@ padding-right: 20px;
     outline: none;
 }
 
-.content-input{
-    width: 1400px;
+.content-input-as{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -391,7 +391,7 @@ padding-right: 20px;
     border-radius: 4px;
     box-sizing: border-box;
     outline: none;
-}
+} */
 
 .image-section{
     margin: 20px 0;
@@ -427,8 +427,8 @@ padding-right: 20px;
     margin-left: 300px;
 }
 
-.title-input{
-    width: 1400px;
+/* .title-input-es{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -438,8 +438,8 @@ padding-right: 20px;
     outline: none;
 }
 
-.content-input{
-    width: 1400px;
+.content-input-es{
+    width: 1100px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -447,7 +447,8 @@ padding-right: 20px;
     border-radius: 4px;
     box-sizing: border-box;
     outline: none;
-}
+ 
+} */
 
 .edit-delete-btns{
     display: flex;
@@ -554,3 +555,158 @@ td{
     padding: 5px 10px;
     border-bottom: 1px solid gray;
 }
+
+/* responsivity */
+
+@media only screen and (max-width: 1580px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 1200px;
+    }
+
+    .pharmacist-box{
+        max-width: 1100px;
+    }
+
+}
+
+@media only screen and (max-width: 1480px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 1000px;
+    }
+
+    .pharmacist-box{
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 850px;
+    }
+
+    .pharmacist-box{
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 650px;
+    }
+
+    .pharmacist-box{
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .pharmacists-list-label-and-add-btn{
+        max-width: 550px;
+    }
+
+    .pharmacist-box{
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1580px) {
+    .services-list-label-and-add-btn{
+        max-width: 1200px;
+    }
+
+    .service-box{
+        max-width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .services-list-label-and-add-btn{
+        max-width: 1000px;
+    }
+
+    .service-box{
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .services-list-label-and-add-btn{
+        max-width: 850px;
+    }
+
+    .service-box{
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .services-list-label-and-add-btn{
+        max-width: 650px;
+    }
+
+    .service-box{
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .title-input{
+        width: 850px;
+    }
+    
+    .content-input{
+        width: 850px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .title-input{
+        width: 750px;
+    }
+    
+    .content-input{
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .title-input{
+        width: 550px;
+    }
+    
+    .content-input{
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title-input{
+        width: 450px;
+    }
+    
+    .content-input{
+        width: 450px;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .title-input-es{
+        width: 350px;
+    }
+    
+    .content-input-es{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title-input-es{
+        width: 150px;
+    }
+    
+    .content-input-es{
+        width: 150px;
+    }
+} */
+
+

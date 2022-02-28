@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../css/admin.css">
+        <link rel="icon" type="image/x-icon" href="../assets/pharmacyLogo.png"> 
     </head>
 
     <body>

@@ -67,12 +67,10 @@
               <img src="./assets/photo 3.jpg">
             </div>
           </div>
-          <br>
 
         <div class="servicestitle">
-            <br>
 
-        <h2 class="know"> e-Pharmacy services</h2>
+            <h2 class="know"> e-Pharmacy services</h2>
 
         </div>
 
@@ -112,12 +110,12 @@
                         </div>
             
                         <div class="desc">
-                            <div class="descContent">
+                            <div>
                                 <h4 class="headerSpan">
                                     <?php echo $service['title'];?>
                                 </h4>
                             </div>
-                            <div>
+                            <div class="descContent">
                                 <p>
                                     <?php echo $service['content'];?> 
                                 </p>
@@ -126,12 +124,12 @@
 
                     <?php else: ?>     
                         <div class="desc">
-                            <div class="descContent">
+                            <div>
                                 <h4 class="headerSpan">
                                     <?php echo $service['title'];?>
                                 </h4>
                             </div>
-                            <div>
+                            <div class="descContent">
                                 <p>
                                     <?php echo $service['content'];?> 
                                 </p>
