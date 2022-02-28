@@ -71,8 +71,8 @@
 
         <div class="add-pharmacist-section">
             <form id="add-form" action="" method="POST" enctype="multipart/form-data">
-                <input class="title-input" type="text" value="" name="full_name" placeholder="Full Name"><br>
-                <input class="content-input" type="text" value="" name="description" placeholder="Description"><br>  
+                <input class="title-input-ap" type="text" value="" name="full_name" placeholder="Full Name"><br>
+                <input class="content-input-ap" type="text" value="" name="description" placeholder="Description"><br>  
 
                 <div class="image-section">
                     <input class="form-control" type="file" name="file">
