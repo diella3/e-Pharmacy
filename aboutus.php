@@ -1,23 +1,24 @@
 <?php
+require './controllers/admAboutusController.php';
 $path = "./config/connection.php";
+
 include($path);
 session_start();
 if((isset($_SESSION['usersuccess'])== true) && ($_SESSION['role']=='user')){
 }
 if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
 }
-
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Register Page</title>
-        <script src="./js/register.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/register.css"/>
 
-    </head>
-    <body>
-    <div class="containerRegister">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="./css/aboutus.css">
+</head>
+
+<body>
+    <div class="mainDiv">
         <header class="header">
             <div class="logo">
                 <img src="./assets/pharmacyLogo.png" />
@@ -28,7 +29,6 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 <a href="aboutus.php">About Us</a>
                 <a href="services.php">Services</a>
                 <?php
-
                 if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
                     echo "<a id='logIn' href='login.php'>".$_SESSION['username'];"</a>";
                 }else if(isset($_SESSION['role']) && ($_SESSION['role']=='admin')){
@@ -46,45 +46,90 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                     echo "<a id='register' href='register.php'>Register</a>";
                 }?>
             </div>
-        </header>        
-        <div class="registerform">
-            <?php
-            $path = "./controllers/registerController.php";
-            include_once($path);
-            ?>
-            <form class="user_data" name='registration' id="regform" action="register.php" method="post">
-                <h1>Registration Form</h1>
-                <p>Please enter your information to register.</p>
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username" size="16" /><br>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="passsword" size="25" /><br>
-                <label for="confirmpassword">Confirm Password:</label>
-                <input type="password" name="confirmpassword" id="confirmpassword" size="25" /><br>
-                <label for="firstname">First Name:</label>
-                <input type="text" name="firstname" id="firstname" size="50" /><br>
-                <label for="lastname">Last Name:</label>
-                <input type="text" name="lastname" id="lastname" size="50" /><br>
-                <label for="address">Full Address:</label>
-                <input type="text" name="address" id="address" size="60" /><br>
-                <label for="zip">ZIP Code:</label>
-                <input type="text" name="zip" id="zip"/><br>
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email"size="50" /><br>
-                <input type="submit" name="submit" value="Submit" class="submitColumn" onclick="return validate()" />
-                
-            </form>
+        </header>
+        <div class="theBanner">
         </div>
+        <div class="aboutUs">
+            <h3> About Our Pharmacy</h3>
+        </div>
+        <?php
+        $foraboutus = new admAboutusController();
+        $aboutusarray = array();
+
+        $aboutus = $foraboutus->getAboutusById(1);
+        array_push($aboutusarray, $aboutus);
+        ?>
+
+        <div class="contentOne">
+            <div class="sectionOneDivOne">
+                <?php
+                echo "<img src='./assets/".$aboutus['image']."' />"
+                ?>
+            </div>
+            <div class="sectionTwoDivOne">
+                <h3> <?php echo $aboutus['title'];?></h3>
+                <p><?php echo $aboutus['content'];?> </p>
+            </div>
+        </div>
+        <?php
+        $foraboutus = new admAboutusController();
+        $aboutusarray = array();
+
+        $aboutus = $foraboutus->getAboutusById(2);
+        array_push($aboutusarray, $aboutus);
+        ?>
+        <div class="contentTwo">
+            <div class="sectionOneDivTwo">
+                <h3> <?php echo $aboutus['title'];?></h3>
+                <p><?php echo $aboutus['content'];?> </p>
+            </div>
+            <div class="sectionTwoDivTwo">
+                <?php echo "<img src='./assets/".$aboutus['image']."' />" ;?>
+            </div>
+        </div>
+        <?php
+        $foraboutus = new admAboutusController();
+        $aboutusarray = array();
+
+        $aboutus = $foraboutus->getAboutusById(3);
+        array_push($aboutusarray, $aboutus);
+        ?>
+        <div class="contentThree">
+            <div class="sectionOneDivThree">
+                <?php echo "<img src='./assets/".$aboutus['image']."' />" ;?>
+            </div>
+            <div class="sectionTwoDivThree">
+                <h3> <?php echo $aboutus['title'];?></h3>
+                <p><?php echo $aboutus['content'];?> </p>
+            </div>
+        </div>
+        <?php
+        $foraboutus = new admAboutusController();
+        $aboutusarray = array();
+
+        $aboutus = $foraboutus->getAboutusById(4);
+        array_push($aboutusarray, $aboutus);
+        ?>
+        <div class="contentFour">
+            <div class="sectionOneDivFour">
+                <h3> <?php echo $aboutus['title'];?></h3>
+                <p><?php echo $aboutus['content'];?> </p>
+            </div>
+            <div class="sectionTwoDivFour">
+                <?php echo "<img src='./assets/".$aboutus['image']."' />" ;?>
+            </div>
+        </div>
+
         <footer>
             <div class="first">
                 <div id="footerLogo">
                     <img src="./assets/pharmacyLogo.png">
                     <h4>e-Pharmacy</h4>
                 </div>
-                <p>If you’re in need of medicines –<br>
+                <p> If you’re in need of medicines –<br>
                     we’re here by your side. Find the right <br>
                     care right when you need it and you will<br>
-                    always get the response. <br>Stay safe and buy online!</p>
+                    always get the response. <br>Stay safe and consulting online!</p>
             </div>
             <div class="second">
                 <h4>Useful Links</h4>
@@ -96,6 +141,7 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
             <div class="third">
                 <h4>Contacts </h4>
                 <div class="contact">
+
                     <img src="./assets/location.png">
                     <p>Rr.Agim Ramadani ,10000 - Prishtine, Kosove</p>
                 </div>
@@ -112,9 +158,9 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 <img src="./assets/facebook.png">
                 <img src="./assets/instagram.png">
                 <img src="./assets/linkedin.png">
-
             </div>
         </footer>
     </div>
-    </body>
+</body>
+
 </html>

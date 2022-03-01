@@ -78,6 +78,7 @@ p{
     border-radius: 50px;
     background-size: 200% auto;
 }
+
 .mainDiv{
     display: flex;
     flex-direction: column;
@@ -138,10 +139,17 @@ p{
 }
 .sectionOneDivOne{
     display: flex;
-    width: 33%;
+    width: auto;
     height: 400px;
     align-items: center;
-    background-image: url("../assets/photo_4_about_us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sectionOneDivOne img{
+    display: flex;
+    height: 400px;
+    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -152,13 +160,12 @@ p{
     align-items: center;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-}  
+}
 .sectionTwoDivOne h3{
     font-size: 25px;
 }
 .sectionTwoDivOne p{
     font-size: 18px;
-    font-weight: 35px;
 }
 .sectionOneDivTwo{
     display: flex;
@@ -176,27 +183,37 @@ p{
 }
 .sectionTwoDivTwo{
     display: flex;
-    width: 33%;
+    width: auto;
     height: 400px;
     align-items: center;
-    margin-left: 2%;
-    background-image: url("../assets/photo_5_about_us.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
+}
+.sectionTwoDivTwo img{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .sectionOneDivThree{
     display: flex;
-    width: 33%;
+    width: auto;
     height: 400px;
     align-items: center;
-    background-image: url("../assets/photo_6_about_us.jpg");
-    background-position: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
+}
+.sectionOneDivThree img{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .sectionTwoDivThree h3{
     font-size: 25px;
@@ -225,18 +242,23 @@ p{
 }
 .sectionOneDivFour ul>li{
     font-size: 18px;
-    font-weight: 35px;
 }
 .sectionTwoDivFour{
     display: flex;
-    width: 33%;
+    width: auto;
     height: 400px;
     align-items: center;
-    background-image: url("../assets/photo_7_about_us.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
+}
+.sectionTwoDivFour img{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 footer{
     align-items: flex-start;
@@ -315,4 +337,67 @@ footer{
     margin-right: 14px;
     width: 25px;
     height: 25px;
+}
+
+@media only screen and (max-width: 1023px){
+     .contentOne{
+     padding: 30px 0;
+     display: flex;
+     flex-direction: column;
+     }
+    .sectionOneDivOne img{
+        height: 250px;
+    }
+    .sectionTwoDivOne{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .contentTwo{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sectionOneDivTwo{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Lato', sans-serif;
+    }
+    .sectionTwoDivTwo img{
+        height: 250px;
+    }
+    .contentThree{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionOneDivThree img{
+        height: 250px;
+    }
+    .sectionTwoDivThree {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Lato', sans-serif;
+    }
+    .contentFour{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sectionOneDivFour{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Lato', sans-serif;
+    }
+    .sectionTwoDivFour img{
+        height: 250px;
+    }
 }

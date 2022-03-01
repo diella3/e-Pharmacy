@@ -1,3 +1,10 @@
+<?php
+$path = "../config/connection.php";
+include($path);
+session_start();
+if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
+}
+?>
 <html>
     <head>   
         <title>Administrator dashboard</title>
@@ -23,28 +30,28 @@
             </div>
 
             <div class="sidebarNavButtons">   
-                <a href="#" class="link">
+                <a href="dashboard.php" class="link">
                     <div class="navBtn">
                         Dashboard
                     </div>
                 </a> 
 
-                <a href="#"class="link">
+                <a href="users.php" class="link">
                     <div class="navBtn">
                         Users
                     </div>
                 </a>  
-                <a href="#" class="link">
+                <a href="./admServices/admin-services.php" class="link">
                     <div class="navBtn">
                         Services
                     </div>
                 </a> 
-                <a href="#" class="link">
+                <a href="./admPharmacists/admin-pharmacists.php" class="link">
                     <div class="navBtn">
                         Pharmacists
                     </div>
                 </a> 
-                <a href="#" class="link">
+                <a href="user.php" class="link">
                     <div class="navBtn">
                         Test
                     </div>

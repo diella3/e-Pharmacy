@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-
 }
 p{
     margin: 0;
@@ -76,6 +75,12 @@ p{
     transition: all .4s ease-in-out ;
     border-radius: 50px;
     background-size: 200% auto;
+}
+.containerRegister{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
 }
 .registerform{
     display: flex;
@@ -215,4 +220,7 @@ footer{
     margin-right: 14px;
     width: 25px;
     height: 25px;
+}
+@media only screen and (max-width: 830px){
+
 }

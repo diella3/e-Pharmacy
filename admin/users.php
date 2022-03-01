@@ -1,3 +1,10 @@
+<?php
+$path = "../config/connection.php";
+include($path);
+session_start();
+if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
+}
+?>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../css/admin.css">
@@ -54,7 +61,7 @@
     
         </div>
 
-        <table id="members"  border="1">
+        <table class="users" id="members"   border="1">
             <tr>
                 <th>ID</th>
                 <th>Username</th>
@@ -67,7 +74,7 @@
             </tr>
             <?php
             $path = "./admRegister/userfunctions.php";
-            include($path);
+            include_once($path);
             $userfunctions = new userfunctions();
             $users = $userfunctions ->getAllUsers();
             foreach($users as $user){
@@ -83,8 +90,7 @@
                     <th>$user[lastname]</th>
                     <th>$user[address]</th>
                     <th>$user[zip]</th>
-                    <td><a href='edit.php?id=$user[userid]'>Edit</a></td>
-                    <td><a href='delete.php?id=$user[userid]'>Delete</a></td>
+                  
                 </tr>
                 <br>
                 ";

@@ -22,18 +22,15 @@ class userfunctions{
         return $users;
     }
 
-    function getUserByUsernameAndPassword($username, $password)
-    {
-
-    }
-
     function getUserById($userid)
     {
         $conn = $this->db->pdo;
 
-        $sql = "SELECT * FROM user WHERE id='$userid'";
-        $statement = $conn->query($sql);
-        return $statement->fetch();
+        $sql = "SELECT userid,username,password,email,firstname,lastname,address,zip FROM users WHERE id=?";
+        $statement=$conn->prepare($sql);
+        $user = $statement->execute([$userid]);
+
+        return $user->fetch(PDO::FETCH_ASSOC);
     }
 
 
@@ -41,7 +38,7 @@ class userfunctions{
     {
         $conn = $this->db->pdo;
 
-        $sql = "UPDATE user SET password=?,email=?,firstname=?,lastname=?,address=?,zip=?,password=? where userId=?";
+        $sql = "UPDATE userS SET password=?,email=?,firstname=?,lastname=?,address=?,zip=?,password=? where userId=?";
 
         $statement = $conn->prepare($sql);
 
@@ -53,7 +50,7 @@ class userfunctions{
     {
         $conn = $this->db->pdo;
 
-        $sql = "DELETE FROM user WHERE username=?";
+        $sql = "DELETE FROM userS WHERE id=?";
 
         $statement = $conn->prepare($sql);
         $statement->execute([$userId]);

@@ -5,8 +5,12 @@
 
     $pharmacistsCount = $dshb->getPharmacistCount();
     $servicesCount = $dshb->getServicesCount();
+$path = "../config/connection.php";
+include($path);
+session_start();
+if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
+}
 ?>
-
 
 <html>
     <head>   
@@ -20,9 +24,9 @@
                 <img src="../assets/pharmacyLogo.png" alt="Logo photo is added here">
                 <h1>e-Pharmacy</h1>
             </div>
-        
+
             <div class="right-area">
-                <a href="#" class=" logout_btn">Logout</a>
+                <a href="../logout.php" class=" logout_btn">Logout</a>
             </div>
         </header>
 
@@ -54,7 +58,7 @@
                         Pharmacists
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="../Home.php" class="link">
                     <div class="navBtn">
                         Test
                     </div>

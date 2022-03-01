@@ -10,7 +10,6 @@ class Users{
     private $address;
     private $zip;
 
-
     function __construct($userId,$username,$password,$email,$firstname,$lastname,$address,$zip){
         $this->userId = $userId;
         $this->username = $username;
@@ -20,6 +19,10 @@ class Users{
         $this->lastname = $lastname;
         $this->address = $address;
         $this->zip = $zip;
+    }
+    function __construct1($username,$password){
+        $this->username = $username;
+        $this->password = $password;
     }
     function getUserId(){
         return $this->userId;
