@@ -40,7 +40,7 @@
     </head>
 
     <body>
-
+    <div class="container">
     <nav>
             <div class="logo">
                 <img src="./assets/pharmacyLogo.png">
@@ -58,6 +58,7 @@
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
+</div>         
 
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -205,6 +206,7 @@
                 </div> 
             <?php endforeach ;?>
         </div>
+      
     
         <footer>
         <div class="container footer">
