@@ -18,10 +18,7 @@
     <head>   
         <title>Administrator dashboard</title>
         <link rel="stylesheet" type="text/css" href="../css/admin.css">
-<<<<<<< HEAD
-=======
         <link rel="icon" type="image/x-icon" href="../assets/pharmacyLogo.png"> 
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
     </head>
 
     <body>
