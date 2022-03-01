@@ -42,6 +42,7 @@
 <body>
 
     <nav id="navbar">
+
             <div class="logo">
                 <img src="./assets/pharmacyLogo.png">
                 <h1>e-Pharmacy</h1>
@@ -59,6 +60,7 @@
             </ul>
         </nav>
               
+
 
         <div class="slideshow-container">
             <div class="mySlides fade">
