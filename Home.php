@@ -43,6 +43,7 @@
 
     <title>Home</title>
     <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./assets/pharmacyLogo.png">
     <style>
         <?php include "css/home.css" ?>   
         <?php include "css/general.css" ?>   
