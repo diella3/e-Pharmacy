@@ -54,9 +54,9 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                         Pharmacists
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a a href="./admClients/admin-clients.php" class="link">
                     <div class="navBtn">
-                        Test
+                        Clients
                     </div>
                 </a>        
             </div>

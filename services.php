@@ -52,10 +52,10 @@
             </div>
             <ul class="mainMenu">
                 <li><a href="Home.php">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.php">About Us</a></li>
                 <li><a href="services.php">Services</a></li>
-                <li><a href="login.html" id="logIn">Log In</a></li>
-                <li><a href="register.html" id="register">Register</a></li>
+                <li><a href="login.php" id="logIn">Log In</a></li>
+                <li><a href="register.php" id="register">Register</a></li>
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
@@ -223,10 +223,10 @@
             </div>
             <div class="second">
                 <h4>Useful Links</h4>
-                <a href="aboutus.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="login.html">LogIn</a>
-                <a href="register.html">Register</a>
+                <a href="aboutus.php">About Us</a>
+                <a href="services.php">Services</a>
+                <a href="login.php">LogIn</a>
+                <a href="register.php">Register</a>
             </div>
             <div class="third">
                 <h4>Contacts </h4>
