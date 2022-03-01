@@ -1,8 +1,16 @@
+<?php
+$path = "../config/connection.php";
+include($path);
+session_start();
+if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
+}
+?>
 <html>
-    <head>
+<head>
         <link rel="stylesheet" type="text/css" href="../css/admin.css">
         <link rel="icon" type="image/x-icon" href="../assets/pharmacyLogo.png"> 
     </head>
+
 
     <body>
 
@@ -55,22 +63,41 @@
     
         </div>
 
-        <table id="members">
+        <table class="users" id="members"   border="1">
             <tr>
-                <th>Perdoruesi</th>
-                <th>Telefoni</th>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
                 <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>ZIP</th>
             </tr>
-            <tr>
-                <td>Plarentine Zejnullahu</td>
-                <td>049-700-700</td>
-                <td>plarentine.zejnullahu@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Plarentine Zejnullahu</td>
-                <td>049-700-700</td>
-                <td>plarentine.zejnullahu@gmail.com</td>
-            </tr>
+            <?php
+            $path = "./admRegister/userfunctions.php";
+            include_once($path);
+            $userfunctions = new userfunctions();
+            $users = $userfunctions ->getAllUsers();
+            foreach($users as $user){
+                echo
+                "
+                <br>
+                <tr>
+                    <th>$user[userid]</th>
+                    <th>$user[username]</th>
+                    <th>$user[password]</th>
+                    <th>$user[email]</th>
+                    <th>$user[firstname]</th>
+                    <th>$user[lastname]</th>
+                    <th>$user[address]</th>
+                    <th>$user[zip]</th>
+                </tr>
+                <br>
+                ";
+            }
+            ?>
+            
             </tr>
         </table>
     </body>

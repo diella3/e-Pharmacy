@@ -5,15 +5,23 @@
 
     $pharmacistsCount = $dshb->getPharmacistCount();
     $servicesCount = $dshb->getServicesCount();
+    $path = "../config/connection.php";
+    include($path);
+    session_start();
+    if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
+    }
     $clientsCount = $dshb->getClientsCount();
-?>
 
+?>
 
 <html>
     <head>   
         <title>Administrator dashboard</title>
         <link rel="stylesheet" type="text/css" href="../css/admin.css">
+<<<<<<< HEAD
+=======
         <link rel="icon" type="image/x-icon" href="../assets/pharmacyLogo.png"> 
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
     </head>
 
     <body>
@@ -81,7 +89,11 @@
                 </div>
 
                 <div class="fourthBox box">
+<<<<<<< HEAD
+                    Test
+=======
                 Total Clients: <?php echo $clientsCount; ?> 
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                 </div>
             </div>
         </div>

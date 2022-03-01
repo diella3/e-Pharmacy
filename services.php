@@ -39,9 +39,10 @@
 
     </head>
 
-    <body>
-    <div class="container">
-    <nav>
+<body>
+
+    <nav id="navbar">
+
             <div class="logo">
                 <img src="./assets/pharmacyLogo.png">
                 <h1>e-Pharmacy</h1>
@@ -58,7 +59,8 @@
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
-</div>         
+              
+
 
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -246,7 +248,7 @@
                 <img src="./assets/instagram.png">
                 <img src="./assets/linkedin.png">
             </div>
-                </div>
+        </div>
         </footer>
 <script src="./js/header.js"></script>
 <script src="./js/slider.js"></script>
