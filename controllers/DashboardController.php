@@ -23,4 +23,8 @@ class DashboardController
     {
         return $this->db->pdo->query('SELECT count(*) FROM clients')->fetchColumn();    
     }
+    public function getUsersCount()
+    {
+        return $this->db->pdo->query('SELECT count(*) FROM users')->fetchColumn();    
+    }
 }
