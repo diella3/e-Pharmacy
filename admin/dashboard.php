@@ -5,12 +5,14 @@
 
     $pharmacistsCount = $dshb->getPharmacistCount();
     $servicesCount = $dshb->getServicesCount();
+    $clientsCount = $dshb->getClientsCount();
+    $usersCount = $dshb->getUsersCount();
     $path = "../config/connection.php";
     include($path);
     session_start();
     if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
     }
-    $clientsCount = $dshb->getClientsCount();
+   
 
 ?>
 
@@ -72,7 +74,7 @@
         <div class="content-wrapper">
             <div class="boxes">
                 <div class="firstBox box">
-                    Users registered
+                    Users registered: <?php echo $usersCount; ?>
                 </div>
 
                 <div class="secondBox box">                  
