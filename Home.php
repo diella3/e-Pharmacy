@@ -7,7 +7,6 @@
 
     $services = $service_pharmacist->getServices();
     $clients = $card_clients->getClients();
-    // $pharmacists = $service_pharmacist->getPharmacists();
     $static_content = $service_pharmacist->getStaticContent();
 
     $firstTwoServices = array();
@@ -25,9 +24,6 @@
             array_push($secondTwoServices, $service);
 
         }
-        // else if($i <= 9){
-        //     array_push($thirdThreeServices, $service);
-        // }
         $i++;
     }
 
@@ -35,40 +31,44 @@
     foreach($clients as $client){
         if($k >=0  && $k <3){
             array_push($firstTwoClients, $client);
-        }
-        
+        }  
         $k++;
-        
-        
+            
     }
 ?>
 
 
 <html>
 <head>
+
     <title>Home</title>
-    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
     <style>
-        <?php include "css/home.css" ?>
-        </style>
+        <?php include "css/home.css" ?>   
+        <?php include "css/general.css" ?>   
+    </style>   
 </head>
 
 <body>
     <!-- Header-->
     <div class="container">
-        <header class="header">
+        <nav>
             <div class="logo">
-                <img src="./assets/pharmacyLogo.png" />
+                <img src="./assets/pharmacyLogo.png">
                 <h1>e-Pharmacy</h1>
             </div>
-            <div class="navbar">
-                <a>Home</a>
-                <a href="aboutus.php">About Us</a>
-                <a href="services.php">Services</a>
-                <a id="logIn" href="login.html">LogIn</a>
-                <a id="register" href="register.html">Register</a>
+            <div class="open-menu">
+                <i class="fa fa-bars"></i>
             </div>
-        </header>
+            <ul class="mainMenu">
+                <li><a href="Home.php">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="login.html" id="logIn">Log In</a></li>
+                <li><a href="register.html" id="register">Register</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
         <!-- Header-->
 
         <!-- Section -->
@@ -216,11 +216,7 @@
                             <p>
                             <?php echo $client['content'];?>
                             </p>
-                            <!-- <p>As a mom, i don't have much time and the<br>
-                                opportunity to go outside at times when my kids are <br>
-                                sick.Online pharmacy is the best soultion.</p> -->
-                            <div id="icon">
-                                <!-- <img src="./assets/client4.jpg"> -->
+                            <div id="icon">         
                                 <?php 
                                     echo "<img src='./assets/".$client['image']."' />"    
                                  ?>  
@@ -236,19 +232,7 @@
                             </div>
                         </div>
                         <?php endforeach ;?>  
-                        <!-- <div class="card">
-                            <h4>Happy Clients</h4>
-                            <p>Online pharmacy is a helpful hand when I don’t feel<br>
-                                like getting out or some medicines or cosmetics are<br>
-                                out of stock in my town.</p>
-                            <div id="icon">
-                                <img src="./assets/client5.jpg">
-                                <div class="cardTxt">
-                                    <p id="name">Linda Patison</p>
-                                    <p id="city">New York</p>
-                                </div>
-                            </div>
-                        </div> -->
+               
                     </div>
                 </div>
             </div>
@@ -331,6 +315,7 @@
             </div>
                 </div>
         </footer>
+        <script src="./js/header.js"></script>
 </body>
 
 </html>
