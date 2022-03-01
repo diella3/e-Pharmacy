@@ -206,7 +206,7 @@
                 </div> 
             <?php endforeach ;?>
         </div>  
-    
+
         <footer>
         <div class="container footer">
             <div class="first">
