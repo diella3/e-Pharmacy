@@ -1,14 +1,18 @@
 <?php 
     require './controllers/ServicePharmacistController.php';
+   
 
     $service_pharmacist = new ServicePharmacistController;
+    $card_clients = new ServicePharmacistController;
 
     $services = $service_pharmacist->getServices();
+    $clients = $card_clients->getClients();
     // $pharmacists = $service_pharmacist->getPharmacists();
     $static_content = $service_pharmacist->getStaticContent();
 
     $firstTwoServices = array();
     $secondTwoServices = array();
+    $firstTwoClients = array();
   
 
     $i = 0;
@@ -25,6 +29,17 @@
         //     array_push($thirdThreeServices, $service);
         // }
         $i++;
+    }
+
+    $k = 0;
+    foreach($clients as $client){
+        if($k >=0  && $k <3){
+            array_push($firstTwoClients, $client);
+        }
+        
+        $k++;
+        
+        
     }
 ?>
 
@@ -52,7 +67,6 @@
                 <a href="services.php">Services</a>
                 <a id="logIn" href="login.html">LogIn</a>
                 <a id="register" href="register.html">Register</a>
-
             </div>
         </header>
         <!-- Header-->
@@ -60,7 +74,7 @@
         <!-- Section -->
         <div class="section">
             <div class="description">
-                <h3>Best Care & <br> Better Health</h3>
+                <h3>Best Care & Better Health</h3>
                 <p>E-Pharmacy is an official supplier of the medical products. We work<br>
                     together with the international pharmaceutical companies that<br>
                     supply licensed medications all over the world. We have achieved<br>
@@ -75,7 +89,7 @@
 
         <!-- About Us-->
         <div class="about">
-            <div>
+            <div class="aboutImg">
                 <img src="./assets/about.png" />
             </div>
             <div class="txtAbout">
@@ -196,22 +210,33 @@
                 <div class="comentsSection">
                     <P id="title">What People Say About Us</P>
                     <div class="cards">
-                        
+                         <?php foreach($firstTwoClients as $client):?>
                         <div class="card">
                             <h4>Happy Clients</h4>
-                            <p>As a mom, i don't have much time and the<br>
+                            <p>
+                            <?php echo $client['content'];?>
+                            </p>
+                            <!-- <p>As a mom, i don't have much time and the<br>
                                 opportunity to go outside at times when my kids are <br>
-                                sick.Online pharmacy is the best soultion.</p>
+                                sick.Online pharmacy is the best soultion.</p> -->
                             <div id="icon">
-                                <img src="./assets/client4.jpg">
+                                <!-- <img src="./assets/client4.jpg"> -->
+                                <?php 
+                                    echo "<img src='./assets/".$client['image']."' />"    
+                                 ?>  
                                 <div class="cardTxt">
-                                    <p id="name">Sandy Cooper</p>
-                                    <p id="city">New York</p>
+                                    <p id="name">
+                                        <?php echo $client['clientName'];?>
+                                    </p>
+                                    <p id="city">
+                                    <?php echo $client['city'];?>
+                                    </p>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="card">
+                        <?php endforeach ;?>  
+                        <!-- <div class="card">
                             <h4>Happy Clients</h4>
                             <p>Online pharmacy is a helpful hand when I don’t feel<br>
                                 like getting out or some medicines or cosmetics are<br>
@@ -223,7 +248,7 @@
                                     <p id="city">New York</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -263,7 +288,10 @@
         </div>
         <!-- last information-->
         <!--Footer-->
-        <footer>
+        
+    </div>
+    <footer>
+        <div class="container footer">
             <div class="first">
                 <div id="footerLogo">
                     <img src="./assets/pharmacyLogo.png">
@@ -301,8 +329,8 @@
                 <img src="./assets/instagram.png">
                 <img src="./assets/linkedin.png">
             </div>
+                </div>
         </footer>
-    </div>
 </body>
 
 </html>
