@@ -55,7 +55,7 @@
                         Services
                     </div>
                 </a> 
-                <a href="./admin-pharmacists.php" class="link">
+                <a href="../admPharmacists/admin-pharmacists.php" class="link">
                     <div class="navBtn">
                         Pharmacists
                     </div>

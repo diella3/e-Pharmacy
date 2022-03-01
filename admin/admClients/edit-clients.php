@@ -63,16 +63,16 @@
                         Services
                     </div>
                 </a> 
-                <a href="./admPharmacists/admin-pharmacists.php" class="link">
+                <a href="../admPharmacists/admin-pharmacists.php" class="link">
                     <div class="navBtn">
                         Pharmacists
                     </div>
                 </a> 
-                <a href="./admClients/admin-clients.php" class="link">
+                <a a href="../admClients/admin-clients.php" class="link">
                     <div class="navBtn">
                         Clients
                     </div>
-                </a>            
+                </a>          
             </div>
         </div>
 
@@ -97,7 +97,7 @@
             
             <div class="edit-delete-btns">
                 <div class="flex1">
-                    <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Edit</button>
+                    <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Save</button>
                 </div>
              
                 <div class="flex1">

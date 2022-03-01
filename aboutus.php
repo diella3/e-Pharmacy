@@ -34,7 +34,7 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 </div>
                 <ul class="mainMenu">
                     <li><a href="Home.php">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="services.php">Services</a></li
                     <?php
                     if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
@@ -144,10 +144,10 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
             </div>
             <div class="second">
                 <h4>Useful Links</h4>
-                <a href="aboutus.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="login.html">LogIn</a>
-                <a href="register.html">Register</a>
+                <a href="aboutus.php">About Us</a>
+                <a href="services.php">Services</a>
+                <a href="login.php">LogIn</a>
+                <a href="register.php">Register</a>
             </div>
             <div class="third">
                 <h4>Contacts </h4>
