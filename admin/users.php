@@ -6,9 +6,11 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
 }
 ?>
 <html>
-    <head>
+<head>
         <link rel="stylesheet" type="text/css" href="../css/admin.css">
+        <link rel="icon" type="image/x-icon" href="../assets/pharmacyLogo.png"> 
     </head>
+
 
     <body>
 

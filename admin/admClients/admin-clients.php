@@ -1,13 +1,12 @@
 <?php 
-    require '../../controllers/AdmPharmacistController.php';
-    $pharmacist = new AdmPharmacistController;
-    $pharmacists = $pharmacist->getPharmacists();
+    require '../../controllers/AdmClientController.php';
+    $client = new AdmClientController;
+    $clients = $client->getClients();
 ?>
 
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../../css/admin.css">
-        <link rel="icon" type="image/x-icon" href="../../assets/pharmacyLogo.png"> 
     </head>
 
     <body>
@@ -46,14 +45,14 @@
                         Services
                     </div>
                 </a> 
-                <a href="./admin-pharmacists.php" class="link">
+                <a href="../admPharmacists/admin-pharmacists.php" class="link">
                     <div class="navBtn">
                         Pharmacists
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="admin-clients.php" class="link">
                     <div class="navBtn">
-                        Test
+                        Clients
                     </div>
                 </a>            
             </div>
@@ -63,29 +62,29 @@
             <div class="pharmacists-list-label-and-add-btn">
                 <div>
                     <h2>
-                        Manage Pharmacists
+                        Manage Clients
                     </h2>
                 </div>
 
                 <div>
-                    <a class="redirection-link" href="add-pharmacist.php">
+                    <a class="redirection-link" href="add-clients.php">
                         <div class="add-new-btn">
-                            Add New Pharmacist
+                            Add New Client
                         </div>
                     </a>                  
                 </div>
             </div>
 
             <div class="services-list-content">
-                <?php foreach($pharmacists as $pharmacist):?>
-                    <a class="redirection-link" href="edit-pharmacist.php?id=<?php echo $pharmacist['id'];?>">
+                <?php foreach($clients as $client):?>
+                    <a class="redirection-link" href="edit-clients.php?id=<?php echo $client['id'];?>">
                         <div class="pharmacist-box">
                             <div class="pharmacist-title flex1">
-                                <?php echo $pharmacist['full_name'];?>
+                                <?php echo $client['clientName'];?>
                             </div>
 
                             <div class="pharmacist-description flex1">
-                                <?php echo $pharmacist['description'];?>
+                                <?php echo $client['content'];?>
                             </div>
                         </div>
                     </a>                 

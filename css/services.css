@@ -6,6 +6,10 @@ p{
     margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+/*slider */
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 
 .slideshow-container {
   width: 85%;
@@ -40,6 +44,19 @@ p{
   to {opacity: 1}
 }
 
+<<<<<<< HEAD
+=======
+/* e-pharmacy title */
+
+.know{
+    font-size: 40px;
+    color: #333333;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 .boxes{
     width: 80%;
     margin: 100px auto;
@@ -91,6 +108,12 @@ p{
 .boxContent{
     padding: 20px 30px 0px 30px;
 }
+<<<<<<< HEAD
+=======
+.boxContent p{
+    line-height: 20px;
+}
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 
 .box:hover{
     background: #7cb4f0;
@@ -144,6 +167,13 @@ p{
 .desc{
     width: 530px;
 }
+<<<<<<< HEAD
+=======
+
+.descContent p {
+    line-height: 25px;
+}
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 .iconImage img{
     margin-top: 20px;
     width: 100px;
@@ -154,7 +184,11 @@ p{
     width: 80%;
     margin: 0 auto;
     margin-bottom: 80px;
+<<<<<<< HEAD
     font-family: 'Lato', sans-serif !important;
+=======
+    /* font-family: 'Lato', sans-serif !important; */
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
     text-align: center !important;
 }
 
@@ -167,6 +201,7 @@ p{
     margin-bottom: 20px;  
 }
 
+<<<<<<< HEAD
 .know{
 
     font-size: 40px;
@@ -182,6 +217,14 @@ color: rgb(127, 127,127) !important;
 font-weight: 500;
 margin-bottom: 26px;
 font-size: 14px;
+=======
+.farmacists p {
+color: rgb(127, 127,127) !important;
+font-weight: 500;
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 22px;
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 
 
 }
@@ -206,7 +249,11 @@ font-size: 14px;
     position: relative;
 }
 .contentImg img{
+<<<<<<< HEAD
     width: 300px;
+=======
+    width: 100%;
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
     height: 200px;
 }
 .contentText h3{
@@ -217,6 +264,7 @@ font-size: 14px;
 
 }
 .contentText p{
+<<<<<<< HEAD
     line-height: 14px;
     font-size: 14px;
 }
@@ -375,3 +423,67 @@ footer{
     width: 25px;
     height: 25px;
 }
+=======
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+
+/* responsivity */
+
+@media only screen and (max-width: 1000px) {
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .service1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image{
+        order: 1;
+    }
+
+    .desc{
+        order:2;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .farmacistsContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .farmacistsContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .farmacistsContent{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content img{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3

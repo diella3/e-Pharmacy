@@ -1,6 +1,6 @@
 <?php
-    require '../../controllers/AdmServiceController.php';
-    $service = new AdmServiceController;
+    require '../../controllers/AdmClientController.php';
+    $client = new AdmClientController;
 
     if(isset($_POST['add'])) {
 
@@ -9,7 +9,7 @@
 
         move_uploaded_file($_FILES['file']['tmp_name'],$target);
 
-        $service->addService($_POST, $image);
+        $client->addClients($_POST, $image);
     }
 
 ?>
@@ -17,7 +17,6 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../../css/admin.css">
-        <link rel="icon" type="image/x-icon" href="../../assets/pharmacyLogo.png"> 
     </head>
 
     <body>
@@ -40,39 +39,42 @@
                 <img src="../../assets/adm.jpg" alt="adminicon is added here">
             </div>
 
-            <div class="sidebarNavButtons">  
+            <div class="sidebarNavButtons"> 
                 <a href="../dashboard.php" class="link">
                     <div class="navBtn">
                         Dashboard
                     </div>
-                </a>            
+                </a>              
                 <a href="../users.php" class="link">
                     <div class="navBtn">
                         Users
                     </div>
                 </a>  
-                <a href="admin-services.php" class="link">
+                <a href="../admServices/admin-services.php" class="link">
                     <div class="navBtn">
                         Services
                     </div>
                 </a> 
-                <a href="../admPharmacists/admin-pharmacists.php" class="link">
+                <a href="./admin-pharmacists.php" class="link">
                     <div class="navBtn">
                         Pharmacists
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="./admin-clients.php" class="link">
                     <div class="navBtn">
-                        Test
+                       Clients
                     </div>
-                </a>           
+                </a>          
             </div>
         </div>
 
-        <div class="add-service-section">
+        <div class="add-pharmacist-section">
             <form id="add-form" action="" method="POST" enctype="multipart/form-data">
-                <input class="title-input" type="text" value="" name="title" placeholder="Title"><br>
-                <input class="content-input" type="text" value="" name="content" placeholder="Content"><br>  
+                <input class="title-input" type="text" value="" name="title" placeholder="title"><br>
+                <input class="content-input" type="text" value="" name="content" placeholder="content"><br>  
+                <input class="content-input" type="text" value="" name="clientName" placeholder="clientName"><br> 
+                <input class="content-input" type="text" value="" name="city" placeholder="city"><br> 
+                
 
                 <div class="image-section">
                     <input class="form-control" type="file" name="file">

@@ -25,6 +25,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+        <link rel="icon" type="image/x-icon" href="../../assets/pharmacyLogo.png"> 
     </head>
 
     <body>
@@ -95,7 +96,11 @@
             
             <div class="edit-delete-btns">
                 <div class="flex1">
+<<<<<<< HEAD
                     <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Edit</button>
+=======
+                    <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Save</button>
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                 </div>
              
                 <div class="flex1">                

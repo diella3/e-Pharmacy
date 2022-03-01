@@ -5,17 +5,23 @@
 
     $pharmacistsCount = $dshb->getPharmacistCount();
     $servicesCount = $dshb->getServicesCount();
-$path = "../config/connection.php";
-include($path);
-session_start();
-if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
-}
+    $path = "../config/connection.php";
+    include($path);
+    session_start();
+    if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
+    }
+    $clientsCount = $dshb->getClientsCount();
+
 ?>
 
 <html>
     <head>   
         <title>Administrator dashboard</title>
         <link rel="stylesheet" type="text/css" href="../css/admin.css">
+<<<<<<< HEAD
+=======
+        <link rel="icon" type="image/x-icon" href="../assets/pharmacyLogo.png"> 
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
     </head>
 
     <body>
@@ -24,9 +30,9 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 <img src="../assets/pharmacyLogo.png" alt="Logo photo is added here">
                 <h1>e-Pharmacy</h1>
             </div>
-
+        
             <div class="right-area">
-                <a href="../logout.php" class=" logout_btn">Logout</a>
+                <a href="#" class=" logout_btn">Logout</a>
             </div>
         </header>
 
@@ -58,9 +64,9 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                         Pharmacists
                     </div>
                 </a> 
-                <a href="../Home.php" class="link">
+                <a href="./admClients/admin-clients.php" class="link">
                     <div class="navBtn">
-                        Test
+                       Clients
                     </div>
                 </a>          
             </div>
@@ -83,7 +89,11 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 </div>
 
                 <div class="fourthBox box">
+<<<<<<< HEAD
                     Test
+=======
+                Total Clients: <?php echo $clientsCount; ?> 
+>>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                 </div>
             </div>
         </div>

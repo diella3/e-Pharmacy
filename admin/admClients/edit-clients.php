@@ -1,12 +1,12 @@
 <?php
-    require '../../controllers/AdmPharmacistController.php';
-    $pharmacist = new AdmPharmacistController;
+    require '../../controllers/AdmClientController.php';
+    $client = new AdmClientController;
 
     if(isset($_GET['id'])) {
-        $pharmacistId = $_GET['id'];
+        $clientId = $_GET['id'];
     }
 
-    $currentPharmacist = $pharmacist->getPharmacistById($pharmacistId);
+    $currentClient = $client->getClientsById($clientId);
 
     if(isset($_POST['edit'])) {
         $target = "../../assets/".basename($_FILES['file']['name']);
@@ -14,18 +14,17 @@
 
         move_uploaded_file($_FILES['file']['tmp_name'],$target);
 
-        $pharmacist->editPharmacist($pharmacistId, $_POST, $image);
+        $client->editClients($clientId, $_POST, $image);
     }
 
     if(isset($_POST['delete'])) {
-        $pharmacist->deletePharmacist($pharmacistId);
+        $client->deleteClients($clientId);
     }
 ?>
 
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../../css/admin.css">
-        <link rel="icon" type="image/x-icon" href="../../assets/pharmacyLogo.png"> 
     </head>
 
     <body>
@@ -64,18 +63,14 @@
                         Services
                     </div>
                 </a> 
-<<<<<<< HEAD
                 <a href="./admPharmacists/admin-pharmacists.php" class="link">
-=======
-                <a href="./admin-pharmacists.php" class="link">
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                     <div class="navBtn">
                         Pharmacists
                     </div>
                 </a> 
-                <a href="user.php" class="link">
+                <a href="./admClients/admin-clients.php" class="link">
                     <div class="navBtn">
-                        Test
+                        Clients
                     </div>
                 </a>            
             </div>
@@ -83,12 +78,14 @@
 
         <div class="edit-service-section">
             <form id="edit-form" action="" method="POST" enctype="multipart/form-data">
-                <input class="title-input" type="text" value="<?php echo $currentPharmacist['full_name']; ?>" name="full_name"><br>
-                <input class="content-input" type="text" value="<?php echo $currentPharmacist['description']; ?>" name="description"><br>     
+                <input class="title-input" type="text" value="<?php echo $currentClient['title']; ?>" name="title"><br>
+                <input class="content-input" type="text" value="<?php echo $currentClient['content']; ?>" name="content"><br>
+                <input class="content-input" type="text" value="<?php echo $currentClient['clientName']; ?>" name="clientName"><br>
+                <input class="content-input" type="text" value="<?php echo $currentClient['city']; ?>" name="city"><br>          
 
                 <div class="image-section">
                     <div class="currentPhotoSection">
-                        <img src="../../assets/<?php echo $currentPharmacist['image'];?>" alt="" width="350" height="250">
+                        <img src="../../assets/<?php echo $currentClient['image'];?>" alt="" width="350" height="250">
                     </div>
                     <input class="form-control" type="file" name="file">
                 </div>              
@@ -100,11 +97,7 @@
             
             <div class="edit-delete-btns">
                 <div class="flex1">
-<<<<<<< HEAD
                     <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Edit</button>
-=======
-                    <button class="submit-btn edit" type="submit" form="edit-form" name="edit">Save</button>
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                 </div>
              
                 <div class="flex1">
