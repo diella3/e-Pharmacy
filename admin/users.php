@@ -90,7 +90,6 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                     <th>$user[lastname]</th>
                     <th>$user[address]</th>
                     <th>$user[zip]</th>
-                  
                 </tr>
                 <br>
                 ";
