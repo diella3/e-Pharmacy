@@ -538,16 +538,11 @@ padding-right: 20px;
 
 /* Users */
 table{
-    border-collapse: collapse;
+    padding-left: 50px;
     display: flex;
     justify-content: center;
-    color: teal;
-    font-size: 25px;
+    color: lightblue;
     text-align: left;
-    margin-left: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-
 }
 
 th{
