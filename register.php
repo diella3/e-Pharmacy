@@ -14,39 +14,46 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
         <title>Register Page</title>
         <script src="./js/register.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/register.css"/>
+        <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="icon" type="image/x-icon" href="./assets/pharmacyLogo.png">
+        <link rel="stylesheet" href="./css/general.css">
 
     </head>
     <body>
     <div class="containerRegister">
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/pharmacyLogo.png" />
-                <h1>e-Pharmacy</h1>
-            </div>
-            <div class="navbar">
-                <a href="home.php">Home</a>
-                <a href="aboutus.php">About Us</a>
-                <a href="services.php">Services</a>
-                <?php
-
-                if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
-                    echo "<a id='logIn' href='login.php'>".$_SESSION['username'];"</a>";
-                }else if(isset($_SESSION['role']) && ($_SESSION['role']=='admin')){
-                    echo "<a id='logIn' href='login.php'>".$_SESSION['username'];"</a>";
-                }
-                else{
-                    echo "<a id='logIn' href='login.php'>Login</a>";
-                }?>
-                <?php
-                if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
-                    echo "<a id='register' href='logout.php'>Logout</a>";
-                }else if(isset($_SESSION['role']) && ($_SESSION['role']=='admin')){
-                    echo "<a id='register' href='logout.php'>Logout</a>";
-                }else{
-                    echo "<a id='register' href='register.php'>Register</a>";
-                }?>
-            </div>
-        </header>        
+    <nav id="navbar">
+                <div class="logo">
+                    <img src="./assets/pharmacyLogo.png">
+                    <h1>e-Pharmacy</h1>
+                </div>
+                <div class="open-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul class="mainMenu">
+                    <li><a href="Home.php">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.php">Services</a></li
+                    <?php
+                    if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
+                        echo "<li><a id='logIn' href='login.php'>".$_SESSION['username'];"</a></li>";
+                    }else if(isset($_SESSION['role']) && ($_SESSION['role']=='admin')){
+                        echo "<li><a id='logIn' href='login.php'>".$_SESSION['username'];"</a></li>";
+                    }
+                    else{
+                        echo "<li><a id='logIn' href='login.php'>Login</a></li>";
+                    }?>
+                    <?php
+                    if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
+                        echo "<li><a id='register' href='logout.php'>Logout</a></li>";
+                    }else if(isset($_SESSION['role']) && ($_SESSION['role']=='admin')){
+                        echo "<li><a id='register' href='logout.php'>Logout</a></li>";
+                    }else{
+                        echo "<li><a id='register' href='register.php'>Register</a></li>";
+                    }
+                    ?>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                    </ul>
+                </nav>      
         <div class="registerform">
             <?php
             $path = "./controllers/registerController.php";
@@ -76,6 +83,7 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
             </form>
         </div>
         <footer>
+        <div class="container footer">
             <div class="first">
                 <div id="footerLogo">
                     <img src="./assets/pharmacyLogo.png">
@@ -88,10 +96,10 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
             </div>
             <div class="second">
                 <h4>Useful Links</h4>
-                <a href="aboutus.php">About Us</a>
-                <a href="services.php">Services</a>
-                <a href="login.php">LogIn</a>
-                <a href="register.php">Register</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="login.html">LogIn</a>
+                <a href="register.html">Register</a>
             </div>
             <div class="third">
                 <h4>Contacts </h4>
@@ -112,9 +120,10 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 <img src="./assets/facebook.png">
                 <img src="./assets/instagram.png">
                 <img src="./assets/linkedin.png">
-
             </div>
+        </div>
         </footer>
+        <script src="./js/header.js"></script>
     </div>
     </body>
 </html>

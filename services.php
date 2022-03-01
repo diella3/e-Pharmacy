@@ -24,74 +24,24 @@
         }
         $i++;
     }
-<<<<<<< HEAD
-
-$path = "./config/connection.php";
-include($path);
-session_start();
-if((isset($_SESSION['usersuccess'])== true) && ($_SESSION['role']=='user')){
-}
-if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
-}
-=======
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 ?>
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 <html>
     <head>
 <title>Services</title>
 
 <link rel="stylesheet" type="text/css" href="./css/services.css">
 <link rel="icon" type="image/x-icon" href="./assets/pharmacyLogo.png"> 
-<<<<<<< HEAD
-=======
 <link rel="stylesheet" type="text/css" href="./css/general.css">
 <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 
     </head>
 
-    <body>
+<body>
 
-<<<<<<< HEAD
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/pharmacyLogo.png" />
-                <h1>e-Pharmacy</h1>
-            </div>
-            <div class="navbar">
-                <a href="home.php">Home</a>
-                <a href="aboutus.php">About Us</a>
-                <a href="services.php">Services</a>
-                <?php
-                if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
-                    echo "<a id='logIn' href='login.php'>".$_SESSION['username'];"</a>";
-                }else if(isset($_SESSION['role']) && ($_SESSION['role']=='admin')){
-                    echo "<a id='logIn' href='login.php'>".$_SESSION['username'];"</a>";
-                }
-                else{
-                    echo "<a id='logIn' href='login.php'>Login</a>";
-                }?>
-                <?php
-                if(isset($_SESSION['role']) && ($_SESSION['role']=='user')){
-                    echo "<a id='register' href='logout.php'>Logout</a>";
-                }else if(isset($_SESSION['role']) && ($_SESSION['role']=='admin')){
-                    echo "<a id='register' href='logout.php'>Logout</a>";
-                }else{
-                    echo "<a id='register' href='register.php'>Register</a>";
-                }?>
-            </div>
-        </header>
-
-        
-=======
-    <nav>
+    <nav id="navbar">
             <div class="logo">
                 <img src="./assets/pharmacyLogo.png">
                 <h1>e-Pharmacy</h1>
@@ -108,7 +58,7 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
+              
 
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -122,19 +72,10 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
               <img src="./assets/photo 3.jpg">
             </div>
           </div>
-<<<<<<< HEAD
-          <br>
-
-        <div class="servicestitle">
-            <br>
-
-        <h2 class="know"> e-Pharmacy services</h2>
-=======
 
         <div class="servicestitle">
 
             <h2 class="know"> e-Pharmacy services</h2>
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 
         </div>
 
@@ -174,20 +115,12 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                         </div>
             
                         <div class="desc">
-<<<<<<< HEAD
-                            <div class="descContent">
-=======
                             <div>
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                                 <h4 class="headerSpan">
                                     <?php echo $service['title'];?>
                                 </h4>
                             </div>
-<<<<<<< HEAD
-                            <div>
-=======
                             <div class="descContent">
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                                 <p>
                                     <?php echo $service['content'];?> 
                                 </p>
@@ -196,20 +129,12 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
 
                     <?php else: ?>     
                         <div class="desc">
-<<<<<<< HEAD
-                            <div class="descContent">
-=======
                             <div>
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                                 <h4 class="headerSpan">
                                     <?php echo $service['title'];?>
                                 </h4>
                             </div>
-<<<<<<< HEAD
-                            <div>
-=======
                             <div class="descContent">
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                                 <p>
                                     <?php echo $service['content'];?> 
                                 </p>
@@ -280,31 +205,15 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                     </div>    
                 </div> 
             <?php endforeach ;?>
-        </div>
-    
+        </div>  
+
         <footer>
-<<<<<<< HEAD
-=======
         <div class="container footer">
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
             <div class="first">
                 <div id="footerLogo">
                     <img src="./assets/pharmacyLogo.png">
                     <h4>e-Pharmacy</h4>
                 </div>
-<<<<<<< HEAD
-                <p> If you’re in need of medicines –<br>
-                    we’re here by your side. Find the right <br>
-                    care right when you need it and you will<br>
-                    always get the response. <br>Stay safe and consulting online!</p>
-            </div>
-            <div class="second">
-                <h4>Useful Links</h4>
-                <a href="aboutus.php">About Us</a>
-                <a href="services.php">Services</a>
-                <a href="login.php">LogIn</a>
-                <a href="register.php">Register</a>
-=======
                 <p>If you’re in need of medicines –<br>
                     we’re here by your side. Find the right <br>
                     care right when you need it and you will<br>
@@ -316,15 +225,10 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 <a href="services.html">Services</a>
                 <a href="login.html">LogIn</a>
                 <a href="register.html">Register</a>
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
             </div>
             <div class="third">
                 <h4>Contacts </h4>
                 <div class="contact">
-<<<<<<< HEAD
-
-=======
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
                     <img src="./assets/location.png">
                     <p>Rr.Agim Ramadani ,10000 - Prishtine, Kosove</p>
                 </div>
@@ -342,13 +246,9 @@ if ((isset($_SESSION['adminsuccsess'])== true) && ($_SESSION['role']=='admin')){
                 <img src="./assets/instagram.png">
                 <img src="./assets/linkedin.png">
             </div>
-<<<<<<< HEAD
-        </footer>
-=======
-                </div>
+        </div>
         </footer>
 <script src="./js/header.js"></script>
->>>>>>> 07a4a4f5fabd9d9b73b4d441b605cd163a1911f3
 <script src="./js/slider.js"></script>
     </body>
 </html>
