@@ -29,7 +29,7 @@
 
     $k = 0;
     foreach($clients as $client){
-        if($k >=0  && $k <3){
+        if($k >=0  && $k <2){
             array_push($firstTwoClients, $client);
         }  
         $k++;
