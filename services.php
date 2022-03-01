@@ -34,26 +34,30 @@
 
 <link rel="stylesheet" type="text/css" href="./css/services.css">
 <link rel="icon" type="image/x-icon" href="./assets/pharmacyLogo.png"> 
+<link rel="stylesheet" type="text/css" href="./css/general.css">
+<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
 
     </head>
 
     <body>
 
-        <header class="header">
+    <nav>
             <div class="logo">
-                <img src="./assets/pharmacyLogo.png" />
+                <img src="./assets/pharmacyLogo.png">
                 <h1>e-Pharmacy</h1>
             </div>
-            <div class="navbar">
-                <a href="Home.html">Home</a>
-                <a href="aboutus.html">About Us</a>
-                <a>Services</a>
-                <a id="logIn" href="login.html">LogIn</a>
-                <a id="register" href="register.html">Register</a>
+            <div class="open-menu">
+                <i class="fa fa-bars"></i>
             </div>
-        </header>
-
-        
+            <ul class="mainMenu">
+                <li><a href="Home.php">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="login.html" id="logIn">Log In</a></li>
+                <li><a href="register.html" id="register">Register</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
 
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -203,15 +207,16 @@
         </div>
     
         <footer>
+        <div class="container footer">
             <div class="first">
                 <div id="footerLogo">
                     <img src="./assets/pharmacyLogo.png">
                     <h4>e-Pharmacy</h4>
                 </div>
-                <p> If you’re in need of medicines –<br>
+                <p>If you’re in need of medicines –<br>
                     we’re here by your side. Find the right <br>
                     care right when you need it and you will<br>
-                    always get the response. <br>Stay safe and consulting online!</p>
+                    always get the response. <br>Stay safe and buy online!</p>
             </div>
             <div class="second">
                 <h4>Useful Links</h4>
@@ -223,7 +228,6 @@
             <div class="third">
                 <h4>Contacts </h4>
                 <div class="contact">
-
                     <img src="./assets/location.png">
                     <p>Rr.Agim Ramadani ,10000 - Prishtine, Kosove</p>
                 </div>
@@ -241,7 +245,9 @@
                 <img src="./assets/instagram.png">
                 <img src="./assets/linkedin.png">
             </div>
+                </div>
         </footer>
+<script src="./js/header.js"></script>
 <script src="./js/slider.js"></script>
     </body>
 </html>
