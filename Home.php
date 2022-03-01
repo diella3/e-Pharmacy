@@ -1,33 +1,80 @@
-<html>
+<?php 
+    require './controllers/ServicePharmacistController.php';
+   
 
+    $service_pharmacist = new ServicePharmacistController;
+    $card_clients = new ServicePharmacistController;
+
+    $services = $service_pharmacist->getServices();
+    $clients = $card_clients->getClients();
+    $static_content = $service_pharmacist->getStaticContent();
+
+    $firstTwoServices = array();
+    $secondTwoServices = array();
+    $firstTwoClients = array();
+  
+
+    $i = 0;
+    foreach( $services as $service) {
+        if($i <=1) {
+            array_push($firstTwoServices, $service);
+
+        } 
+        else if($i <= 2){
+            array_push($secondTwoServices, $service);
+
+        }
+        $i++;
+    }
+
+    $k = 0;
+    foreach($clients as $client){
+        if($k >=0  && $k <3){
+            array_push($firstTwoClients, $client);
+        }  
+        $k++;
+            
+    }
+?>
+
+
+<html>
 <head>
+
     <title>Home</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        <?php include "css/home.css" ?>   
+        <?php include "css/general.css" ?>   
+    </style>   
 </head>
 
 <body>
     <!-- Header-->
     <div class="container">
-        <header class="header">
+        <nav>
             <div class="logo">
-                <img src="./assets/pharmacyLogo.png" />
+                <img src="./assets/pharmacyLogo.png">
                 <h1>e-Pharmacy</h1>
             </div>
-            <div class="navbar">
-                <a>Home</a>
-                <a href="aboutus.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a id="logIn" href="login.html">LogIn</a>
-                <a id="register" href="register.html">Register</a>
-
+            <div class="open-menu">
+                <i class="fa fa-bars"></i>
             </div>
-        </header>
+            <ul class="mainMenu">
+                <li><a href="Home.php">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="login.html" id="logIn">Log In</a></li>
+                <li><a href="register.html" id="register">Register</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
         <!-- Header-->
 
         <!-- Section -->
         <div class="section">
             <div class="description">
-                <h3>Best Care & <br> Better Health</h3>
+                <h3>Best Care & Better Health</h3>
                 <p>E-Pharmacy is an official supplier of the medical products. We work<br>
                     together with the international pharmaceutical companies that<br>
                     supply licensed medications all over the world. We have achieved<br>
@@ -42,7 +89,7 @@
 
         <!-- About Us-->
         <div class="about">
-            <div>
+            <div class="aboutImg">
                 <img src="./assets/about.png" />
             </div>
             <div class="txtAbout">
@@ -95,59 +142,48 @@
         <div class="serviceContainer">
             <h3>Services</h3>
             <div class="services">
+      
                 <div class="service">
-                    <div class="one">
-                        <div class="icon">
-                            <img src="./assets/servicesIcon.png">
-                            <p>Disposal and review of medicals</p>
-                        </div>
-                        <div class="text">
-                            <p>Besides selling the medicines, our pharmacy<br>
-                                provides the service of disposal of medicals.<br>
-                                 </p>
-                        </div>
-                    </div>
+                <?php foreach($firstTwoServices as $service):?>
                     <div class="one">
                         <div class="icon">
                             <img src="./assets/servicesIcon.png">
                             <p>
-                                Covid - 19 Instructions </p>
+                                <?php echo $service['title'];?>
+                            </p>
                         </div>
                         <div class="text">
-                            <p>Contact us at any time to take <br>
-                                the necessary measures at the right time.</p>
+                            <p>
+                                <?php echo $service['content'];?><br>
+                            </p>
                         </div>
                     </div>
+            
+                    <?php endforeach ;?>
                 </div>
-                <div>
+               <div id="mainImg">
                     <img src="./assets/services.png">
                 </div>
                 <div class="service">
+                <?php foreach($secondTwoServices as $service):?>
                     <div class="one">
                         <div class="icon">
                             <img src="./assets/servicesIcon.png">
                             <p>
-                                Health education</p>
+                                <?php echo $service['title'];?>
+                            </p>
                         </div>
                         <div class="text">
-                            <p> Health education teaches about physical,  <br>
-                                mental, emotional and social health.</p>
-                        </div>
-                    </div>
-                    <div class="one">
-                        <div class="icon">
-                            <img src="./assets/servicesIcon.png">
                             <p>
-                                Consultations and instructions </p>
-                        </div>
-                        <div class="text">
-                            <p>We may provide you  the  perfect place <br>
-                                for consulting and instructions. </p>
+                                <?php echo $service['content'];?><br>
+                            </p>
                         </div>
                     </div>
-                </div>
+                    <?php endforeach ;?>
+                </div> 
               
             </div>
+          
             <a class="btn1" href="services.html">LEARN MORE</a>
         </div>
         <!-- Our services-->
@@ -174,33 +210,29 @@
                 <div class="comentsSection">
                     <P id="title">What People Say About Us</P>
                     <div class="cards">
+                         <?php foreach($firstTwoClients as $client):?>
                         <div class="card">
                             <h4>Happy Clients</h4>
-                            <p>As a mom, i don't have much time and the<br>
-                                opportunity to go outside at times when my kids are <br>
-                                sick.Online pharmacy is the best soultion.</p>
-                            <div id="icon">
-                                <img src="./assets/client4.jpg">
+                            <p>
+                            <?php echo $client['content'];?>
+                            </p>
+                            <div id="icon">         
+                                <?php 
+                                    echo "<img src='./assets/".$client['image']."' />"    
+                                 ?>  
                                 <div class="cardTxt">
-                                    <p id="name">Sandy Cooper</p>
-                                    <p id="city">New York</p>
+                                    <p id="name">
+                                        <?php echo $client['clientName'];?>
+                                    </p>
+                                    <p id="city">
+                                    <?php echo $client['city'];?>
+                                    </p>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="card">
-                            <h4>Happy Clients</h4>
-                            <p>Online pharmacy is a helpful hand when I don’t feel<br>
-                                like getting out or some medicines or cosmetics are<br>
-                                out of stock in my town.</p>
-                            <div id="icon">
-                                <img src="./assets/client5.jpg">
-                                <div class="cardTxt">
-                                    <p id="name">Linda Patison</p>
-                                    <p id="city">New York</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach ;?>  
+               
                     </div>
                 </div>
             </div>
@@ -240,7 +272,10 @@
         </div>
         <!-- last information-->
         <!--Footer-->
-        <footer>
+        
+    </div>
+    <footer>
+        <div class="container footer">
             <div class="first">
                 <div id="footerLogo">
                     <img src="./assets/pharmacyLogo.png">
@@ -278,8 +313,9 @@
                 <img src="./assets/instagram.png">
                 <img src="./assets/linkedin.png">
             </div>
+                </div>
         </footer>
-    </div>
+        <script src="./js/header.js"></script>
 </body>
 
 </html>
